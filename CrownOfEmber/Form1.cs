@@ -29,7 +29,10 @@ namespace CrownOfEmber
         {
             //widthForm1 = Form1.ActiveForm.Size.Width;
             // heightForm1 = Form1.ActiveForm.Size.Height;
-            
+
+
+            //FormStart frm = (FormStart)this.Owner;
+            //frm.func();
         }
 
         private void label0201_Click(object sender, EventArgs e)
