@@ -118,10 +118,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBoxCharName = new System.Windows.Forms.ToolStripTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.toolStripTextBoxKindness = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxHonor = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxPatience = new System.Windows.Forms.ToolStripTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxField1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -1181,7 +1181,26 @@
             // toolStripTextBoxCharName
             // 
             this.toolStripTextBoxCharName.Name = "toolStripTextBoxCharName";
+            this.toolStripTextBoxCharName.ReadOnly = true;
             this.toolStripTextBoxCharName.Size = new System.Drawing.Size(150, 23);
+            // 
+            // toolStripTextBoxKindness
+            // 
+            this.toolStripTextBoxKindness.Name = "toolStripTextBoxKindness";
+            this.toolStripTextBoxKindness.ReadOnly = true;
+            this.toolStripTextBoxKindness.Size = new System.Drawing.Size(100, 23);
+            // 
+            // toolStripTextBoxHonor
+            // 
+            this.toolStripTextBoxHonor.Name = "toolStripTextBoxHonor";
+            this.toolStripTextBoxHonor.ReadOnly = true;
+            this.toolStripTextBoxHonor.Size = new System.Drawing.Size(80, 23);
+            // 
+            // toolStripTextBoxPatience
+            // 
+            this.toolStripTextBoxPatience.Name = "toolStripTextBoxPatience";
+            this.toolStripTextBoxPatience.ReadOnly = true;
+            this.toolStripTextBoxPatience.Size = new System.Drawing.Size(90, 23);
             // 
             // panel2
             // 
@@ -1191,21 +1210,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(855, 51);
             this.panel2.TabIndex = 4;
-            // 
-            // toolStripTextBoxKindness
-            // 
-            this.toolStripTextBoxKindness.Name = "toolStripTextBoxKindness";
-            this.toolStripTextBoxKindness.Size = new System.Drawing.Size(100, 23);
-            // 
-            // toolStripTextBoxHonor
-            // 
-            this.toolStripTextBoxHonor.Name = "toolStripTextBoxHonor";
-            this.toolStripTextBoxHonor.Size = new System.Drawing.Size(80, 23);
-            // 
-            // toolStripTextBoxPatience
-            // 
-            this.toolStripTextBoxPatience.Name = "toolStripTextBoxPatience";
-            this.toolStripTextBoxPatience.Size = new System.Drawing.Size(90, 23);
             // 
             // FormField1
             // 

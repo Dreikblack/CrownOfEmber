@@ -34,7 +34,7 @@ namespace CrownOfEmber
 
         private void buttonStartGame_Click(object sender, EventArgs e)
         {
-            if (listPlayers.Capacity==0)
+            if (listPlayers.Count==0)
             {
                 SelectChar();
             }

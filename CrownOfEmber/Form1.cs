@@ -21,14 +21,14 @@ namespace CrownOfEmber
             InitializeComponent();
             for (int i=0;i< ltPlayers.Count;i=i+1)
             {
-                listPlayers.Add(new Player(ltPlayers[i]));
+                listPlayers.Add(new Player(ltPlayers[i], i));
             }
             
             //Player player1 = new Player(ltPlayers[0]);
-            toolStripTextBoxCharName.Text = "Персонаж:  " + listPlayers[curPlayer].charName()+ "; ";
-            toolStripTextBoxKindness.Text = "Статус: " + listPlayers[curPlayer].GetKindness() + ";";
-            toolStripTextBoxHonor.Text = listPlayers[curPlayer].GetHonor() + "; ";
-            toolStripTextBoxPatience.Text = listPlayers[curPlayer].GetPatience();
+            toolStripTextBoxCharName.Text = "Персонаж:  " + listPlayers[curPlayer].CharName()+ "; ";
+            toolStripTextBoxKindness.Text = "Статус: " + listPlayers[curPlayer].Kindness + ";";
+            toolStripTextBoxHonor.Text = listPlayers[curPlayer].Honor + "; ";
+            toolStripTextBoxPatience.Text = listPlayers[curPlayer].Patience;
         }
         
         private void Form1_SizeChanged(object sender, EventArgs e)
