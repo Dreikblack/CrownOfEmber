@@ -34,7 +34,11 @@ namespace CrownOfEmber
 
         private void buttonStartGame_Click(object sender, EventArgs e)
         {
-            FormField1 FrmF1 = new FormField1();
+            if (listPlayers.Capacity==0)
+            {
+                SelectChar();
+            }
+            FormField1 FrmF1 = new FormField1(listPlayers);
             //FrmF1.Activate();
             FrmF1.Owner = this;
             FrmF1.Show();
@@ -42,6 +46,10 @@ namespace CrownOfEmber
         }
 
         private void buttonSelectChar_Click(object sender, EventArgs e)
+        {
+            SelectChar();
+        }
+        private void SelectChar()
         {
             if (listBoxChar.Items.Count > 0)
             {
