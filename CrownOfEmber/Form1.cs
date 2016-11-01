@@ -38,6 +38,7 @@ namespace CrownOfEmber
         private void label0201_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Обменный пункт");
+         
         }
 
         private void FormField1_FormClosed(object sender, FormClosedEventArgs e)
