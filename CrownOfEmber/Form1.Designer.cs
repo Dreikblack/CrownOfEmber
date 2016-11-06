@@ -115,16 +115,22 @@
             this.label0202 = new System.Windows.Forms.Label();
             this.label0201 = new System.Windows.Forms.Label();
             this.picBoxField1 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStripFormField1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBoxCharName = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxKindness = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxHonor = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxPatience = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxRound = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxTurn = new System.Windows.Forms.ToolStripTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.кинутьКубикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBoxRes = new System.Windows.Forms.ToolStripTextBox();
+            this.закончитьХодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBoxCurPlayer = new System.Windows.Forms.ToolStripTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxField1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.menuStripFormField1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -219,9 +225,9 @@
             this.panel1.Controls.Add(this.label0201);
             this.panel1.Controls.Add(this.picBoxField1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 27);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(855, 279);
+            this.panel1.Size = new System.Drawing.Size(1203, 527);
             this.panel1.TabIndex = 2;
             // 
             // label1208
@@ -234,6 +240,7 @@
             this.label1208.TabIndex = 84;
             this.label1208.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1208.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1108
             // 
@@ -245,6 +252,7 @@
             this.label1108.TabIndex = 83;
             this.label1108.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1108.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1008
             // 
@@ -256,6 +264,7 @@
             this.label1008.TabIndex = 82;
             this.label1008.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1008.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0908
             // 
@@ -267,6 +276,7 @@
             this.label0908.TabIndex = 81;
             this.label0908.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0908.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0808
             // 
@@ -278,6 +288,7 @@
             this.label0808.TabIndex = 80;
             this.label0808.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0808.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0708
             // 
@@ -289,6 +300,7 @@
             this.label0708.TabIndex = 79;
             this.label0708.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0708.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0608
             // 
@@ -300,6 +312,7 @@
             this.label0608.TabIndex = 78;
             this.label0608.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0608.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0508
             // 
@@ -311,6 +324,7 @@
             this.label0508.TabIndex = 77;
             this.label0508.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0508.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0408
             // 
@@ -322,6 +336,7 @@
             this.label0408.TabIndex = 76;
             this.label0408.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0408.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1207
             // 
@@ -333,6 +348,7 @@
             this.label1207.TabIndex = 75;
             this.label1207.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1207.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1107
             // 
@@ -344,6 +360,7 @@
             this.label1107.TabIndex = 74;
             this.label1107.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1107.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1007
             // 
@@ -355,6 +372,7 @@
             this.label1007.TabIndex = 73;
             this.label1007.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1007.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0907
             // 
@@ -366,6 +384,7 @@
             this.label0907.TabIndex = 72;
             this.label0907.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0907.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0807
             // 
@@ -377,6 +396,7 @@
             this.label0807.TabIndex = 71;
             this.label0807.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0807.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0607
             // 
@@ -387,6 +407,7 @@
             this.label0607.Size = new System.Drawing.Size(502, 247);
             this.label0607.TabIndex = 70;
             this.label0607.Text = resources.GetString("label0607.Text");
+            this.label0607.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0507
             // 
@@ -398,6 +419,7 @@
             this.label0507.TabIndex = 69;
             this.label0507.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0507.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0407
             // 
@@ -409,6 +431,7 @@
             this.label0407.TabIndex = 68;
             this.label0407.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0407.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1206
             // 
@@ -420,6 +443,7 @@
             this.label1206.TabIndex = 67;
             this.label1206.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1206.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1106
             // 
@@ -431,6 +455,7 @@
             this.label1106.TabIndex = 66;
             this.label1106.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1106.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1006
             // 
@@ -442,6 +467,7 @@
             this.label1006.TabIndex = 65;
             this.label1006.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1006.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0706
             // 
@@ -453,6 +479,7 @@
             this.label0706.TabIndex = 64;
             this.label0706.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0706.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0606
             // 
@@ -464,6 +491,7 @@
             this.label0606.TabIndex = 63;
             this.label0606.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0606.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1105
             // 
@@ -475,6 +503,7 @@
             this.label1105.TabIndex = 62;
             this.label1105.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1105.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1005
             // 
@@ -486,6 +515,7 @@
             this.label1005.TabIndex = 61;
             this.label1005.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1005.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0905
             // 
@@ -497,6 +527,7 @@
             this.label0905.TabIndex = 60;
             this.label0905.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0905.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0805
             // 
@@ -508,6 +539,7 @@
             this.label0805.TabIndex = 59;
             this.label0805.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0805.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0705
             // 
@@ -519,6 +551,7 @@
             this.label0705.TabIndex = 58;
             this.label0705.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0705.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0605
             // 
@@ -530,6 +563,7 @@
             this.label0605.TabIndex = 57;
             this.label0605.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0605.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1104
             // 
@@ -541,6 +575,7 @@
             this.label1104.TabIndex = 56;
             this.label1104.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1104.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1004
             // 
@@ -552,6 +587,7 @@
             this.label1004.TabIndex = 55;
             this.label1004.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1004.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0904
             // 
@@ -563,6 +599,7 @@
             this.label0904.TabIndex = 54;
             this.label0904.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0904.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0804
             // 
@@ -574,6 +611,7 @@
             this.label0804.TabIndex = 53;
             this.label0804.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0804.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0704
             // 
@@ -585,6 +623,7 @@
             this.label0704.TabIndex = 52;
             this.label0704.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0704.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0604
             // 
@@ -596,6 +635,7 @@
             this.label0604.TabIndex = 51;
             this.label0604.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0604.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0505
             // 
@@ -607,6 +647,7 @@
             this.label0505.TabIndex = 50;
             this.label0505.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0505.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0504
             // 
@@ -618,6 +659,7 @@
             this.label0504.TabIndex = 49;
             this.label0504.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0504.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0405
             // 
@@ -629,6 +671,7 @@
             this.label0405.TabIndex = 48;
             this.label0405.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0405.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0404
             // 
@@ -640,6 +683,7 @@
             this.label0404.TabIndex = 47;
             this.label0404.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0404.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0308
             // 
@@ -651,6 +695,7 @@
             this.label0308.TabIndex = 46;
             this.label0308.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0308.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0307
             // 
@@ -662,6 +707,7 @@
             this.label0307.TabIndex = 45;
             this.label0307.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0307.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0306
             // 
@@ -673,6 +719,7 @@
             this.label0306.TabIndex = 44;
             this.label0306.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0306.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0305
             // 
@@ -684,6 +731,7 @@
             this.label0305.TabIndex = 43;
             this.label0305.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0305.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0304
             // 
@@ -695,6 +743,7 @@
             this.label0304.TabIndex = 42;
             this.label0304.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0304.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1103
             // 
@@ -706,6 +755,7 @@
             this.label1103.TabIndex = 41;
             this.label1103.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1103.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1003
             // 
@@ -717,6 +767,7 @@
             this.label1003.TabIndex = 40;
             this.label1003.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1003.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0903
             // 
@@ -728,6 +779,7 @@
             this.label0903.TabIndex = 39;
             this.label0903.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0903.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0803
             // 
@@ -739,6 +791,7 @@
             this.label0803.TabIndex = 38;
             this.label0803.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0803.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0603
             // 
@@ -751,6 +804,7 @@
             this.label0603.Text = "                                                                                 " +
     "                                                                                " +
     "  \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0603.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0503
             // 
@@ -762,6 +816,7 @@
             this.label0503.TabIndex = 36;
             this.label0503.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0503.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0403
             // 
@@ -773,6 +828,7 @@
             this.label0403.TabIndex = 35;
             this.label0403.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0403.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0303
             // 
@@ -784,6 +840,7 @@
             this.label0303.TabIndex = 34;
             this.label0303.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0303.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1101
             // 
@@ -795,6 +852,7 @@
             this.label1101.TabIndex = 33;
             this.label1101.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1101.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1102
             // 
@@ -806,6 +864,7 @@
             this.label1102.TabIndex = 32;
             this.label1102.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1102.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1002
             // 
@@ -817,6 +876,7 @@
             this.label1002.TabIndex = 31;
             this.label1002.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1002.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0902
             // 
@@ -828,6 +888,7 @@
             this.label0902.TabIndex = 30;
             this.label0902.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0902.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0802
             // 
@@ -839,6 +900,7 @@
             this.label0802.TabIndex = 29;
             this.label0802.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0802.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0702
             // 
@@ -850,6 +912,7 @@
             this.label0702.TabIndex = 28;
             this.label0702.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0702.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0602
             // 
@@ -861,6 +924,7 @@
             this.label0602.TabIndex = 27;
             this.label0602.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0602.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0502
             // 
@@ -872,6 +936,7 @@
             this.label0502.TabIndex = 26;
             this.label0502.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0502.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0402
             // 
@@ -883,6 +948,7 @@
             this.label0402.TabIndex = 25;
             this.label0402.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0402.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0302
             // 
@@ -894,6 +960,7 @@
             this.label0302.TabIndex = 24;
             this.label0302.Text = "                                                                        \r\n\r\n\r\n\r\n\r" +
     "\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0302.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1209
             // 
@@ -905,6 +972,7 @@
             this.label1209.TabIndex = 23;
             this.label1209.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1209.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1109
             // 
@@ -916,6 +984,7 @@
             this.label1109.TabIndex = 22;
             this.label1109.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1109.Click += new System.EventHandler(this.Label_Click);
             // 
             // label1009
             // 
@@ -927,6 +996,7 @@
             this.label1009.TabIndex = 21;
             this.label1009.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label1009.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0909
             // 
@@ -938,6 +1008,7 @@
             this.label0909.TabIndex = 20;
             this.label0909.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0909.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0809
             // 
@@ -949,6 +1020,7 @@
             this.label0809.TabIndex = 19;
             this.label0809.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0809.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0709
             // 
@@ -960,6 +1032,7 @@
             this.label0709.TabIndex = 18;
             this.label0709.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0709.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0609
             // 
@@ -971,6 +1044,7 @@
             this.label0609.TabIndex = 17;
             this.label0609.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0609.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0509
             // 
@@ -982,6 +1056,7 @@
             this.label0509.TabIndex = 16;
             this.label0509.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0509.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0409
             // 
@@ -993,6 +1068,7 @@
             this.label0409.TabIndex = 15;
             this.label0409.Text = "                                                                         \r\n\r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0409.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0309
             // 
@@ -1004,6 +1080,7 @@
             this.label0309.TabIndex = 14;
             this.label0309.Text = "                                                                        \r\n\r\n\r\n\r\n\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0309.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0209
             // 
@@ -1015,6 +1092,7 @@
             this.label0209.TabIndex = 13;
             this.label0209.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0209.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0109
             // 
@@ -1026,6 +1104,7 @@
             this.label0109.TabIndex = 12;
             this.label0109.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0109.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0208
             // 
@@ -1037,6 +1116,7 @@
             this.label0208.TabIndex = 11;
             this.label0208.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0208.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0207
             // 
@@ -1048,6 +1128,7 @@
             this.label0207.TabIndex = 10;
             this.label0207.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0207.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0108
             // 
@@ -1059,6 +1140,7 @@
             this.label0108.TabIndex = 9;
             this.label0108.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0108.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0107
             // 
@@ -1070,6 +1152,7 @@
             this.label0107.TabIndex = 8;
             this.label0107.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0107.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0106
             // 
@@ -1081,6 +1164,7 @@
             this.label0106.TabIndex = 7;
             this.label0106.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0106.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0206
             // 
@@ -1092,6 +1176,7 @@
             this.label0206.TabIndex = 6;
             this.label0206.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0206.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0205
             // 
@@ -1103,6 +1188,7 @@
             this.label0205.TabIndex = 5;
             this.label0205.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0205.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0204
             // 
@@ -1114,6 +1200,7 @@
             this.label0204.TabIndex = 4;
             this.label0204.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0204.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0203
             // 
@@ -1125,6 +1212,7 @@
             this.label0203.TabIndex = 3;
             this.label0203.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0203.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0202
             // 
@@ -1136,6 +1224,7 @@
             this.label0202.TabIndex = 2;
             this.label0202.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label0202.Click += new System.EventHandler(this.Label_Click);
             // 
             // label0201
             // 
@@ -1147,7 +1236,7 @@
             this.label0201.TabIndex = 1;
             this.label0201.Text = "                                                                           \r\n\r\n\r\n" +
     "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
-            this.label0201.Click += new System.EventHandler(this.label0201_Click);
+            this.label0201.Click += new System.EventHandler(this.Label_Click);
             // 
             // picBoxField1
             // 
@@ -1158,19 +1247,25 @@
             this.picBoxField1.TabIndex = 0;
             this.picBoxField1.TabStop = false;
             // 
-            // menuStrip1
+            // menuStripFormField1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStripFormField1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
+            this.toolStripTextBoxCurPlayer,
             this.toolStripTextBoxCharName,
             this.toolStripTextBoxKindness,
             this.toolStripTextBoxHonor,
-            this.toolStripTextBoxPatience});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(855, 27);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            this.toolStripTextBoxPatience,
+            this.toolStripTextBoxRound,
+            this.toolStripTextBoxTurn,
+            this.кинутьКубикToolStripMenuItem,
+            this.toolStripTextBoxRes,
+            this.закончитьХодToolStripMenuItem});
+            this.menuStripFormField1.Location = new System.Drawing.Point(0, 0);
+            this.menuStripFormField1.Name = "menuStripFormField1";
+            this.menuStripFormField1.Size = new System.Drawing.Size(1203, 27);
+            this.menuStripFormField1.TabIndex = 3;
+            this.menuStripFormField1.Text = "menuStrip1";
             // 
             // файлToolStripMenuItem
             // 
@@ -1182,13 +1277,13 @@
             // 
             this.toolStripTextBoxCharName.Name = "toolStripTextBoxCharName";
             this.toolStripTextBoxCharName.ReadOnly = true;
-            this.toolStripTextBoxCharName.Size = new System.Drawing.Size(150, 23);
+            this.toolStripTextBoxCharName.Size = new System.Drawing.Size(180, 23);
             // 
             // toolStripTextBoxKindness
             // 
             this.toolStripTextBoxKindness.Name = "toolStripTextBoxKindness";
             this.toolStripTextBoxKindness.ReadOnly = true;
-            this.toolStripTextBoxKindness.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBoxKindness.Size = new System.Drawing.Size(130, 23);
             // 
             // toolStripTextBoxHonor
             // 
@@ -1202,24 +1297,63 @@
             this.toolStripTextBoxPatience.ReadOnly = true;
             this.toolStripTextBoxPatience.Size = new System.Drawing.Size(90, 23);
             // 
+            // toolStripTextBoxRound
+            // 
+            this.toolStripTextBoxRound.Name = "toolStripTextBoxRound";
+            this.toolStripTextBoxRound.ReadOnly = true;
+            this.toolStripTextBoxRound.Size = new System.Drawing.Size(100, 23);
+            // 
+            // toolStripTextBoxTurn
+            // 
+            this.toolStripTextBoxTurn.Name = "toolStripTextBoxTurn";
+            this.toolStripTextBoxTurn.ReadOnly = true;
+            this.toolStripTextBoxTurn.Size = new System.Drawing.Size(100, 23);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Peru;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 306);
+            this.panel2.Location = new System.Drawing.Point(0, 527);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(855, 51);
+            this.panel2.Size = new System.Drawing.Size(1203, 51);
             this.panel2.TabIndex = 4;
+            // 
+            // кинутьКубикToolStripMenuItem
+            // 
+            this.кинутьКубикToolStripMenuItem.Name = "кинутьКубикToolStripMenuItem";
+            this.кинутьКубикToolStripMenuItem.Size = new System.Drawing.Size(92, 23);
+            this.кинутьКубикToolStripMenuItem.Text = "Кинуть кубик";
+            this.кинутьКубикToolStripMenuItem.Click += new System.EventHandler(this.кинутьКубикToolStripMenuItem_Click);
+            // 
+            // toolStripTextBoxRes
+            // 
+            this.toolStripTextBoxRes.Name = "toolStripTextBoxRes";
+            this.toolStripTextBoxRes.ReadOnly = true;
+            this.toolStripTextBoxRes.Size = new System.Drawing.Size(100, 23);
+            // 
+            // закончитьХодToolStripMenuItem
+            // 
+            this.закончитьХодToolStripMenuItem.Name = "закончитьХодToolStripMenuItem";
+            this.закончитьХодToolStripMenuItem.Size = new System.Drawing.Size(98, 23);
+            this.закончитьХодToolStripMenuItem.Text = "Закончить ход";
+            this.закончитьХодToolStripMenuItem.Click += new System.EventHandler(this.закончитьХодToolStripMenuItem_Click);
+            // 
+            // toolStripTextBoxCurPlayer
+            // 
+            this.toolStripTextBoxCurPlayer.Name = "toolStripTextBoxCurPlayer";
+            this.toolStripTextBoxCurPlayer.ReadOnly = true;
+            this.toolStripTextBoxCurPlayer.Size = new System.Drawing.Size(100, 23);
             // 
             // FormField1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 357);
+            this.BackColor = System.Drawing.Color.Peru;
+            this.ClientSize = new System.Drawing.Size(1203, 578);
+            this.Controls.Add(this.menuStripFormField1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel2);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStripFormField1;
             this.Name = "FormField1";
             this.Text = "Корона Эмбера";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormField1_FormClosed);
@@ -1228,8 +1362,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxField1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStripFormField1.ResumeLayout(false);
+            this.menuStripFormField1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1238,7 +1372,7 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox picBoxField1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStripFormField1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label0201;
@@ -1329,6 +1463,12 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBoxKindness;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBoxHonor;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBoxPatience;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxRound;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxTurn;
+        private System.Windows.Forms.ToolStripMenuItem кинутьКубикToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxRes;
+        private System.Windows.Forms.ToolStripMenuItem закончитьХодToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxCurPlayer;
     }
 }
 

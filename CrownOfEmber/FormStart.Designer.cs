@@ -43,18 +43,34 @@
             this.listBoxChar.FormattingEnabled = true;
             this.listBoxChar.ItemHeight = 24;
             this.listBoxChar.Items.AddRange(new object[] {
-            "Эльф",
-            "Гоблин"});
-            this.listBoxChar.Location = new System.Drawing.Point(13, 61);
+            "Амазонка",
+            "Безумный учёный",
+            "Гладиатор",
+            "Гоблин",
+            "Гусар",
+            "Звездочёт",
+            "Знахарка",
+            "Инопланетянин",
+            "Королева ведьм",
+            "Монах",
+            "Мутант",
+            "Оборотень",
+            "Наёмник",
+            "Ниндзя",
+            "Разрушитель",
+            "Фея",
+            "Цыган",
+            "Эльф"});
+            this.listBoxChar.Location = new System.Drawing.Point(13, 48);
             this.listBoxChar.Name = "listBoxChar";
-            this.listBoxChar.Size = new System.Drawing.Size(108, 172);
+            this.listBoxChar.Size = new System.Drawing.Size(205, 172);
             this.listBoxChar.TabIndex = 0;
             this.listBoxChar.SelectedIndexChanged += new System.EventHandler(this.listBoxChar_SelectedIndexChanged);
             // 
             // picBoxCardChar
             // 
-            this.picBoxCardChar.Image = global::CrownOfEmber.Properties.Resources.CardElf;
-            this.picBoxCardChar.Location = new System.Drawing.Point(154, 14);
+            this.picBoxCardChar.Image = global::CrownOfEmber.Properties.Resources.CardAmazon;
+            this.picBoxCardChar.Location = new System.Drawing.Point(240, 14);
             this.picBoxCardChar.Name = "picBoxCardChar";
             this.picBoxCardChar.Size = new System.Drawing.Size(600, 268);
             this.picBoxCardChar.TabIndex = 1;
@@ -63,7 +79,7 @@
             // labelSelectChar
             // 
             this.labelSelectChar.AutoSize = true;
-            this.labelSelectChar.Location = new System.Drawing.Point(12, 36);
+            this.labelSelectChar.Location = new System.Drawing.Point(69, 32);
             this.labelSelectChar.Name = "labelSelectChar";
             this.labelSelectChar.Size = new System.Drawing.Size(99, 13);
             this.labelSelectChar.TabIndex = 2;
@@ -71,9 +87,9 @@
             // 
             // buttonStartGame
             // 
-            this.buttonStartGame.Location = new System.Drawing.Point(13, 288);
+            this.buttonStartGame.Location = new System.Drawing.Point(15, 259);
             this.buttonStartGame.Name = "buttonStartGame";
-            this.buttonStartGame.Size = new System.Drawing.Size(108, 23);
+            this.buttonStartGame.Size = new System.Drawing.Size(205, 23);
             this.buttonStartGame.TabIndex = 3;
             this.buttonStartGame.Text = "Начать игру";
             this.buttonStartGame.UseVisualStyleBackColor = true;
@@ -90,9 +106,9 @@
             // 
             // buttonSelectChar
             // 
-            this.buttonSelectChar.Location = new System.Drawing.Point(15, 240);
+            this.buttonSelectChar.Location = new System.Drawing.Point(15, 226);
             this.buttonSelectChar.Name = "buttonSelectChar";
-            this.buttonSelectChar.Size = new System.Drawing.Size(106, 42);
+            this.buttonSelectChar.Size = new System.Drawing.Size(203, 25);
             this.buttonSelectChar.TabIndex = 6;
             this.buttonSelectChar.Text = "Выбрать этого персонажа";
             this.buttonSelectChar.UseVisualStyleBackColor = true;
@@ -102,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 319);
+            this.ClientSize = new System.Drawing.Size(855, 294);
             this.Controls.Add(this.buttonSelectChar);
             this.Controls.Add(this.labelPlayerN);
             this.Controls.Add(this.buttonStartGame);

@@ -14,7 +14,10 @@ namespace CrownOfEmber
         // public int widthForm1 = 0;
         //   public int heightForm1 = 0;
         List<Player> listPlayers = new List<Player>();
-        int curPlayer = 0;
+        short curPlayer = 0;
+        short curRound = 1;
+        short curTurn = 1;
+        short curRes = 0;
         //public Player[] msPlayers = new Player[2];
         public FormField1(List<string> ltPlayers)
         {
@@ -23,12 +26,11 @@ namespace CrownOfEmber
             {
                 listPlayers.Add(new Player(ltPlayers[i], i));
             }
-            
+
             //Player player1 = new Player(ltPlayers[0]);
-            toolStripTextBoxCharName.Text = "Персонаж:  " + listPlayers[curPlayer].CharName()+ "; ";
-            toolStripTextBoxKindness.Text = "Статус: " + listPlayers[curPlayer].Kindness + ";";
-            toolStripTextBoxHonor.Text = listPlayers[curPlayer].Honor + "; ";
-            toolStripTextBoxPatience.Text = listPlayers[curPlayer].Patience;
+            SetStatus();
+
+
         }
         
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -46,10 +48,64 @@ namespace CrownOfEmber
             
         }
 
-        private void label0201_Click(object sender, EventArgs e)
+        private void Label_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Обменный пункт");
-         
+            Title oldTitile = new Title(((Label)sender).Name);
+            MessageBox.Show("Name - " + oldTitile.Name+" World "+oldTitile.World + " First near - " + oldTitile.NearTitles[0]);
+            
+            /*  if (curRes>0 && MovePlayer(listPlayers[curPlayer].Place, ((Button)sender).Name))
+              {
+                  MessageBox.Show("Way has been found");
+              }
+              else
+                  MessageBox.Show("Path not found");
+           */   //  ISingleCalculation calc = OneArgFactory.CreateSingleCalculator(((Button)sender).Name);
+
+        }
+
+        private bool MovePlayer(string from, string where)
+        {
+
+            return false;
+        }
+
+        private void кинутьКубикToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (toolStripTextBoxRes.Text == "")
+            {
+                Random rnd = new Random();
+                int res = rnd.Next(6) + 1;
+                curRes = (short)res;
+                toolStripTextBoxRes.Text = "На кубике " + res;
+            }
+        }
+
+        private void закончитьХодToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (curPlayer < (listPlayers.Count - 1))
+            {
+                curPlayer++;
+            }
+            else
+            {
+                curPlayer = 0;
+                curRound++;
+            }
+            curTurn++;
+            SetStatus();
+            curRes = 0;
+            toolStripTextBoxRes.Text = "";
+        }
+
+        private void SetStatus()
+        {
+            toolStripTextBoxCurPlayer.Text = "Ход игрока №" + (curPlayer + 1);
+            toolStripTextBoxCharName.Text = "Персонаж:  " + listPlayers[curPlayer].Name() + "; ";
+            toolStripTextBoxKindness.Text = "Статус: " + listPlayers[curPlayer].Kindness + ";";
+            toolStripTextBoxHonor.Text = listPlayers[curPlayer].Honor + "; ";
+            toolStripTextBoxPatience.Text = listPlayers[curPlayer].Patience;
+            toolStripTextBoxRound.Text = "Тур: " + curRound;
+            toolStripTextBoxTurn.Text = "Ход: " + curTurn;
         }
 
         private void FormField1_FormClosed(object sender, FormClosedEventArgs e)
@@ -145,5 +201,7 @@ namespace CrownOfEmber
             label1208.Parent = picBoxField1;
             label1209.Parent = picBoxField1;
         }
+
+
     }
 }

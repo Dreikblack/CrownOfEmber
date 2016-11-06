@@ -118,13 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CardAlien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardAlien.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardAmazon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardAmazon.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardAstrologer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardAstrologer.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardDestroyer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardDestroyer.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CardElf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardElf.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardFairy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardFairy.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardGipsy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardGipsy.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardGladiator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardGladiator.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CardGoblin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardGoblin.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CardHussar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardHussar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardMercenary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardMercenary.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardMonk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardMonk.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardMutant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardMutant.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardNinja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardNinja.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardPowwow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardPowwow.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardScientist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardScientist.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardWerwolf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardWerwolf.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardWitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardWitch.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Field1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Field1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextFileTitles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextFileTitles.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
 </root>

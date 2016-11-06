@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Player.cs" />
+    <Compile Include="Classes\Title.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CardGoblin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardAlien.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardAmazon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardAstrologer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardDestroyer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardFairy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardGipsy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardGladiator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardHussar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardMercenary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardMonk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardMutant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardNinja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardPowwow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardScientist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardWerwolf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardWitch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextFileTitles.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

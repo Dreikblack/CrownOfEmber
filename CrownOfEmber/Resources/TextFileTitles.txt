@@ -1,0 +1,84 @@
+label0106;Застава;Мир Золота;label0206;label0107
+label0107;Контрабандисты;Мир Золота;label0106;label0108
+label0108;Иностранный легион;Мир Золота;label0107;label0109
+label0109;Золотая шахта;Мир Золота;label0108;label0209
+label0201;Обменный пункт;Нейтральный;label0202
+label0202;Постоялый двор;Мир Магии;label0201;label0302;label0203
+label0203;Древний тракт;Мир Магии;label0202;label0204
+label0204;Магшоп;Мир Магии;label0203;label0205
+label0205;Провал мира магии;Нейтральный;label0204;label0206
+label0206;Башня владыки мира магии;Мир Магии;label0106;label0207
+label0207;Кладбище;Мир Магии;label0206;label0208
+label0208;Зачарованная деревня;Мир Магии;label0207;label0308
+label0209;Чёрная касса мафии;Мир Золота;label0109;label0309
+label0302;Ведьмин луг;Мир Магии;label0202;label0402
+label0303;Караван-сарай;Мир Силы;label0403;label0403
+label0304;Пустыня;Мир Силы;label0303;label0305
+label0305;Оазис;Мир Силы;label0304;label0306
+label0306;Пустыня;Мир Силы;label0305;label0307
+label0307;Замок владыки мира силы;Мир Силы;label0306;label0407
+label0308;Топь;Мир Магии;label0208;label0408
+label0309;Детективное бюро;Мир Золота;label0209;label0409
+label0402;Священная роща;Мир Магии;label0302;label0502
+label0403;Прерия;Мир Силы;label0303;label0503
+label0404;Храм Бааля 3 и 4;Нейтральный;label0405
+label0405;Храм Бааля 5 и 6;Нейтральный;label0505
+label0407;Джунгли;Мир Силы;label0307;label0507
+label0408;Пустошь;Мир Магии;label0308;label0508
+label0409;Аэропорт;Мир Золота;label0408;label0509;label0309
+label0502;Скалы;Мир Магии;label0402;label0602
+label0503;Салун;Мир Силы;label0403;label0603
+label0504;Храм Бааля 1 и 2;Нейтральный;label0404
+label0505;Храм Бааля 7 и 8;Нейтральный;label0504;label0605
+label0507;Каменная гряда;Мир Силы;label0407;label0607
+label0508;Гарь;Мир Магии;label0408;label0608
+label0509;Казино;Мир Золота;label0409;label0609
+label0602;Зловещий лес;Мир Магии;label0502;label0603
+label0603;Лазарет;Нейтральный;label0602;label0702;label0503;label0803;label0604;label0704
+label0604;Храм Бааля;Мир Магии;label0603;label0504;label0605
+label0605;Лысая гора;Мир Магии;label0604;label0606
+label0606;Полые холмы;Мир Магии;label0605;label0607
+label0607;Заготконтора;Нейтральный;label0606;label0706;label0507;label0807;label0608;label0708
+label0608;Покинутый дом;Мир Магии;label0607;label0508
+label0609;Отель;Мир Золота;label0509;label0709
+label0702;Лицей;Мир Ума;label0802;label0703
+label0704;Зона мутаций;Мир Ума;label0603;label0705
+label0705;Эпицентр;Мир Ума;label0704;label0706
+label0706;Выженная земля;Мир Ума;label0705;label0607
+label0708;Древо познания;Мир Ума;label0607;label0808
+label0709;Полицейский участок;Мир Золота;label0609;label0809
+label0802;Равнина;Мир Ума;label0702;label0902
+label0803;Ранчо;Мир Силы;label0603;label0903
+label0804;Перевал 3 и 4;Нейтральный;label0804
+label0805;Перевал 5 и 6;Нейтральный;label0905
+label0807;Саванна;Мир Силы;label0607;label0907
+label0808;Дворец владыки мира ума;Мир Ума;label0708;label0908
+label0809;Банк;Мир Золота;label0709;label0909
+label0902;Брод;Мир Ума;label0802;label1002
+label0903;Прерия;Мир Силы;label0803;label1003
+label0904;Перевал 1 и 2;Нейтральный;label0804
+label0905;Перевал 7 и 8;Нейтральный;label0904;label1005
+label0907;Провал мира силы;Нейтральный;label0807;label1007
+label0908;Заброшенное шоссе;Мир Ума;label0808;label1008;label0909
+label0909;Ростовщик;Мир Золота;label0908;label0809;label1009
+label1002;Степь;Мир Ума;label0902;label1102
+label1003;Заросли кактусов;Мир Силы;label0903;label1004
+label1004;Перевал;label1003;Мир Силы;label0904;label1005
+label1005;Крепость;label1003;Мир Силы;label1005
+label1006;Оружейная лавка;Мир Силы;label1004;label1006
+label1007;Конные варвары;Мир Силы;label1006;label0907
+label1008;Речка;label0908;Мир Ума;label1108
+label1009;Биржа;label0909;Мир Золота;label1109
+label1101;Обменный пункт;Нейтральный;label1102
+label1102;Биржа;label1101;label1002;label1103
+label1103;Провал мира ума;Нейтральный;label1102;label1104
+label1104;Пик "Олимп";Мир Ума;label1103;label1105
+label1105;Обсерватория;Мир Ума;label1104;label1106
+label1106;Книжный магазин;Мир Ума;label1105;label1206;label1107
+label1107;Маковые заросли;Мир Ума;label1106;label1108
+label1108;Пещера мудреца;Мир Ума;label1008;label1107
+label1109;Игровые автоматы;Мир Золота;label1009;label1509
+label1206;Кабак;label1106;Мир Золота;label1207
+label1207;Тараканьи бега;Мир Золота;label1206;label1208
+label1208;Картёжники;Мир Золота;label1207;label1209
+label1209;Пещера сокровищ;Мир Золота;label1208;label1109

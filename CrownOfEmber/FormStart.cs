@@ -22,13 +22,63 @@ namespace CrownOfEmber
 
         private void listBoxChar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxChar.GetItemText(listBoxChar.SelectedItem) == "Эльф")
+
+            switch(listBoxChar.GetItemText(listBoxChar.SelectedItem))
             {
-                picBoxCardChar.Image = Properties.Resources.CardElf;
-            }
-            else if (listBoxChar.GetItemText(listBoxChar.SelectedItem) == "Гоблин")
-            {
-                picBoxCardChar.Image = Properties.Resources.CardGoblin;
+                case "Амазонка":
+                    picBoxCardChar.Image = Properties.Resources.CardAmazon;
+                    break;
+                case "Безумный учёный":
+                    picBoxCardChar.Image = Properties.Resources.CardScientist;
+                    break;
+                case "Гладиатор":
+                    picBoxCardChar.Image = Properties.Resources.CardGladiator;
+                    break;
+                case "Гоблин":
+                    picBoxCardChar.Image = Properties.Resources.CardGoblin;
+                    break;
+                case "Гусар":
+                    picBoxCardChar.Image = Properties.Resources.CardHussar;
+                    break;
+                case "Звездочёт":
+                    picBoxCardChar.Image = Properties.Resources.CardAstrologer;
+                    break;
+                case "Знахарка":
+                    picBoxCardChar.Image = Properties.Resources.CardPowwow;
+                    break;
+                case "Инопланетянин":
+                    picBoxCardChar.Image = Properties.Resources.CardAlien;
+                    break;
+                case "Королева ведьм":
+                    picBoxCardChar.Image = Properties.Resources.CardWitch;
+                    break;
+                case "Монах":
+                    picBoxCardChar.Image = Properties.Resources.CardMonk;
+                    break;
+                case "Мутант":
+                    picBoxCardChar.Image = Properties.Resources.CardMutant;
+                    break;
+                case "Оборотень":
+                    picBoxCardChar.Image = Properties.Resources.CardWerwolf;
+                    break;
+                case "Наёмник":
+                    picBoxCardChar.Image = Properties.Resources.CardMercenary;
+                    break;
+                case "Ниндзя":
+                    picBoxCardChar.Image = Properties.Resources.CardNinja;
+                    break;
+                case "Разрушитель":
+                    picBoxCardChar.Image = Properties.Resources.CardDestroyer;
+                    break;
+                case "Фея":
+                    picBoxCardChar.Image = Properties.Resources.CardFairy;
+                    break;
+                case "Цыган":
+                    picBoxCardChar.Image = Properties.Resources.CardGipsy;
+                    break;
+                case "Эльф":
+                    picBoxCardChar.Image = Properties.Resources.CardElf;
+                    break;
             }
         }
 
@@ -65,6 +115,10 @@ namespace CrownOfEmber
                     labelPlayerN.Text = "Игрок № " + numberPlayer;
                 }
             }
-        }
+            if (listBoxChar.Items.Count > 0 && listBoxChar.GetItemText(listBoxChar.SelectedItem) == "")
+            {
+                    listBoxChar.SetSelected(0, true);
+            }
+         }
     }
 }
