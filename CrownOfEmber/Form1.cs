@@ -14,6 +14,8 @@ namespace CrownOfEmber
         // public int widthForm1 = 0;
         //   public int heightForm1 = 0;
         List<Player> listPlayers = new List<Player>();
+        List<Label> listPlaces = new List<Label>();
+        List<Button> listButtonPlayers = new List<Button>();
         short curPlayer = 0;
         short curRound = 1;
         short curTurn = 1;
@@ -22,15 +24,10 @@ namespace CrownOfEmber
         public FormField1(List<string> ltPlayers)
         {
             InitializeComponent();
-            for (int i=0;i< ltPlayers.Count;i=i+1)
+            for (int i = 0; i < ltPlayers.Count; i++)
             {
                 listPlayers.Add(new Player(ltPlayers[i], i));
             }
-
-            //Player player1 = new Player(ltPlayers[0]);
-            SetStatus();
-
-
         }
         
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -43,9 +40,43 @@ namespace CrownOfEmber
         private void Form1_Load(object sender, EventArgs e)
         {
             SetTransparence();
+            FillListPlaces();
             //widthForm1 = Form1.ActiveForm.Size.Width;
             // heightForm1 = Form1.ActiveForm.Size.Height;
-            
+            for (int i = 0; i < listPlayers.Count; i++)
+            {
+                for (int j = 0; j < listPlaces.Count; j++)
+                {
+                    if (listPlaces[j].Name == listPlayers[i].Place)
+                    {
+                        //listPlaces[j].Location.X
+                        listButtonPlayers.Add(new Button());
+                        //System.Windows.Forms.Button listButtonPlayers[i] = new System.Windows.Forms.Button(); // создаем контрол
+                        listButtonPlayers[i].Location = new System.Drawing.Point(listPlaces[j].Location.X, listPlaces[j].Location.Y); // устанавливаем необходимые свойства
+                                                                                                                                      // MessageBox.Show("!!!!");
+                                                                                                                                      //  listButtonPlayers[i].Location = new System.Drawing.Point(100, 100);
+                        listButtonPlayers[i].Name = "ButtonPlayer" + (i);
+                        listButtonPlayers[i].Size = new System.Drawing.Size(20, 20);
+                        listButtonPlayers[i].TabIndex = 0;
+                        listButtonPlayers[i].Text = "" + (i + 1);
+                        listButtonPlayers[i].UseVisualStyleBackColor = true;
+                        
+                        listButtonPlayers[i].Click += new System.EventHandler(ButtonPlayer_Click); // ButtonPlayer_Click - функция обработчик события нажатия на кнопку
+                        Controls.Add(listButtonPlayers[i]); // добавляем на форму
+                        listButtonPlayers[i].Parent = picBoxField1;
+                        listButtonPlayers[i].BringToFront();
+                        break;
+                    }
+                }
+            }
+       
+            //   label0106.Location.X;
+            // listPlayers[0].Place.;
+
+
+
+            SetStatus();
+
         }
 
         private void Label_Click(object sender, EventArgs e)
@@ -67,6 +98,10 @@ namespace CrownOfEmber
         {
 
             return false;
+        }
+
+        private void ButtonPlayer_Click(object sender, EventArgs e)
+        {
         }
 
         private void кинутьКубикToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,6 +146,94 @@ namespace CrownOfEmber
         private void FormField1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.ExitThread();
+        }
+
+        private void FillListPlaces()
+        {
+            listPlaces.Add(label0106);
+            listPlaces.Add(label0107);
+            listPlaces.Add(label0108);
+            listPlaces.Add(label0109);
+            listPlaces.Add(label0201);
+            listPlaces.Add(label0202);
+            listPlaces.Add(label0203);
+            listPlaces.Add(label0204);
+            listPlaces.Add(label0205);
+            listPlaces.Add(label0206);
+            listPlaces.Add(label0207);
+            listPlaces.Add(label0208);
+            listPlaces.Add(label0209);
+            listPlaces.Add(label0302);
+            listPlaces.Add(label0303);
+            listPlaces.Add(label0304);
+            listPlaces.Add(label0305);
+            listPlaces.Add(label0306);
+            listPlaces.Add(label0307);
+            listPlaces.Add(label0308);
+            listPlaces.Add(label0309);
+            listPlaces.Add(label0402);
+            listPlaces.Add(label0403);
+            listPlaces.Add(label0404);
+            listPlaces.Add(label0405);
+            listPlaces.Add(label0407);
+            listPlaces.Add(label0408);
+            listPlaces.Add(label0409);
+            listPlaces.Add(label0502);
+            listPlaces.Add(label0503);
+            listPlaces.Add(label0504);
+            listPlaces.Add(label0505);
+            listPlaces.Add(label0507);
+            listPlaces.Add(label0508);
+            listPlaces.Add(label0509);
+            listPlaces.Add(label0602);
+            listPlaces.Add(label0603);
+            listPlaces.Add(label0604);
+            listPlaces.Add(label0605);
+            listPlaces.Add(label0606);
+            listPlaces.Add(label0607);
+            listPlaces.Add(label0608);
+            listPlaces.Add(label0609);
+            listPlaces.Add(label0702);
+            listPlaces.Add(label0704);
+            listPlaces.Add(label0705);
+            listPlaces.Add(label0706);
+            listPlaces.Add(label0708);
+            listPlaces.Add(label0709);
+            listPlaces.Add(label0802);
+            listPlaces.Add(label0803);
+            listPlaces.Add(label0804);
+            listPlaces.Add(label0805);
+            listPlaces.Add(label0807);
+            listPlaces.Add(label0808);
+            listPlaces.Add(label0809);
+            listPlaces.Add(label0902);
+            listPlaces.Add(label0903);
+            listPlaces.Add(label0904);
+            listPlaces.Add(label0905);
+            listPlaces.Add(label0907);
+            listPlaces.Add(label0908);
+            listPlaces.Add(label0909);
+            listPlaces.Add(label1002);
+            listPlaces.Add(label1003);
+            listPlaces.Add(label1004);
+            listPlaces.Add(label1005);
+            listPlaces.Add(label1006);
+            listPlaces.Add(label1007);
+            listPlaces.Add(label1008);
+            listPlaces.Add(label1009);
+            listPlaces.Add(label1101);
+            listPlaces.Add(label1102);
+            listPlaces.Add(label1103);
+            listPlaces.Add(label1104);
+            listPlaces.Add(label1105);
+            listPlaces.Add(label1106);
+            listPlaces.Add(label1107);
+            listPlaces.Add(label1108);
+            listPlaces.Add(label1109);
+            listPlaces.Add(label1206);
+            listPlaces.Add(label1207);
+            listPlaces.Add(label1208);
+            listPlaces.Add(label1209);
         }
 
         private void SetTransparence()

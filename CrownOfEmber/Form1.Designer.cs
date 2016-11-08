@@ -117,17 +117,17 @@
             this.picBoxField1 = new System.Windows.Forms.PictureBox();
             this.menuStripFormField1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBoxCurPlayer = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxCharName = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxKindness = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxHonor = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxPatience = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxRound = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxTurn = new System.Windows.Forms.ToolStripTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.кинутьКубикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBoxRes = new System.Windows.Forms.ToolStripTextBox();
             this.закончитьХодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBoxCurPlayer = new System.Windows.Forms.ToolStripTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxField1)).BeginInit();
             this.menuStripFormField1.SuspendLayout();
@@ -1273,6 +1273,12 @@
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 23);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
+            // toolStripTextBoxCurPlayer
+            // 
+            this.toolStripTextBoxCurPlayer.Name = "toolStripTextBoxCurPlayer";
+            this.toolStripTextBoxCurPlayer.ReadOnly = true;
+            this.toolStripTextBoxCurPlayer.Size = new System.Drawing.Size(100, 23);
+            // 
             // toolStripTextBoxCharName
             // 
             this.toolStripTextBoxCharName.Name = "toolStripTextBoxCharName";
@@ -1309,15 +1315,6 @@
             this.toolStripTextBoxTurn.ReadOnly = true;
             this.toolStripTextBoxTurn.Size = new System.Drawing.Size(100, 23);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Peru;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 527);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1203, 51);
-            this.panel2.TabIndex = 4;
-            // 
             // кинутьКубикToolStripMenuItem
             // 
             this.кинутьКубикToolStripMenuItem.Name = "кинутьКубикToolStripMenuItem";
@@ -1338,11 +1335,14 @@
             this.закончитьХодToolStripMenuItem.Text = "Закончить ход";
             this.закончитьХодToolStripMenuItem.Click += new System.EventHandler(this.закончитьХодToolStripMenuItem_Click);
             // 
-            // toolStripTextBoxCurPlayer
+            // panel2
             // 
-            this.toolStripTextBoxCurPlayer.Name = "toolStripTextBoxCurPlayer";
-            this.toolStripTextBoxCurPlayer.ReadOnly = true;
-            this.toolStripTextBoxCurPlayer.Size = new System.Drawing.Size(100, 23);
+            this.panel2.BackColor = System.Drawing.Color.Peru;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 527);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1203, 51);
+            this.panel2.TabIndex = 4;
             // 
             // FormField1
             // 
