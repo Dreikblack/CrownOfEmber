@@ -49,55 +49,78 @@ namespace CrownOfEmber
                 {
                     if (listPlaces[j].Name == listPlayers[i].Place)
                     {
-                        //listPlaces[j].Location.X
                         listButtonPlayers.Add(new Button());
-                        //System.Windows.Forms.Button listButtonPlayers[i] = new System.Windows.Forms.Button(); // создаем контрол
-                        listButtonPlayers[i].Location = new System.Drawing.Point(listPlaces[j].Location.X, listPlaces[j].Location.Y); // устанавливаем необходимые свойства
-                                                                                                                                      // MessageBox.Show("!!!!");
-                                                                                                                                      //  listButtonPlayers[i].Location = new System.Drawing.Point(100, 100);
+                        listButtonPlayers[i].Location = new System.Drawing.Point(listPlaces[j].Location.X, listPlaces[j].Location.Y);
                         listButtonPlayers[i].Name = "ButtonPlayer" + (i);
-                        listButtonPlayers[i].Size = new System.Drawing.Size(20, 20);
+                        listButtonPlayers[i].Size = new System.Drawing.Size(30, 30);
                         listButtonPlayers[i].TabIndex = 0;
                         listButtonPlayers[i].Text = "" + (i + 1);
-                        listButtonPlayers[i].UseVisualStyleBackColor = true;
-                        
-                        listButtonPlayers[i].Click += new System.EventHandler(ButtonPlayer_Click); // ButtonPlayer_Click - функция обработчик события нажатия на кнопку
-                        Controls.Add(listButtonPlayers[i]); // добавляем на форму
+                     //   listButtonPlayers[i].Font = ;
+                        listButtonPlayers[i].BackColor = Color.Orange; 
+                        listButtonPlayers[i].Click += new System.EventHandler(ButtonPlayer_Click); 
+                        Controls.Add(listButtonPlayers[i]);
                         listButtonPlayers[i].Parent = picBoxField1;
                         listButtonPlayers[i].BringToFront();
                         break;
                     }
                 }
             }
-       
-            //   label0106.Location.X;
-            // listPlayers[0].Place.;
-
-
-
             SetStatus();
-
         }
 
         private void Label_Click(object sender, EventArgs e)
         {
             Title oldTitile = new Title(((Label)sender).Name);
-            MessageBox.Show("Name - " + oldTitile.Name+" World "+oldTitile.World + " First near - " + oldTitile.NearTitles[0]);
-            
-            /*  if (curRes>0 && MovePlayer(listPlayers[curPlayer].Place, ((Button)sender).Name))
+            //  MessageBox.Show("Name - " + oldTitile.Name+" World "+oldTitile.World + " First near - " + oldTitile.NearTitles[0]);
+        /*    for(int j=0;j< oldTitile.NearTitles.Count;j++)
+            { 
+            MessageBox.Show("Near: " + oldTitile.NearTitles[j]);
+        }*/
+              if (curRes>0 && MovePlayer(listPlayers[curPlayer].Place, ((Label)sender).Name, curRes))
               {
                   MessageBox.Show("Way has been found");
               }
               else
                   MessageBox.Show("Path not found");
-           */   //  ISingleCalculation calc = OneArgFactory.CreateSingleCalculator(((Button)sender).Name);
 
         }
 
-        private bool MovePlayer(string from, string where)
+        private bool MovePlayer(string from, string where, short N)
         {
+           // List<Title> listPlaces = new List<Title>();
+            List<List<Title>> listOfLists = new List<List<Title>>();
+            
+            
+            for (int i=0;i<=N;i++)
+            {
+                listOfLists.Add(new List<Title>());
+            }
 
-            return false;
+            listOfLists[0].Add(new Title(from));
+            for (int i = 1; i <= N; i++)
+            {
+                for(int j=0;j<listOfLists[i-1].Count;j++)
+                {
+                    //for(int k=0;k<listOfLists[i - 1][j].NearTitles.Count; k++)
+                    //{
+                    foreach (string strNear in listOfLists[i - 1][j].NearTitles)
+                    {   // listOfLists[i].Add(new Title(listOfLists[i - 1][j].NearTitles[k]));
+                        listOfLists[i].Add(new Title(strNear));
+                        //  }
+                    }
+                }
+            }
+            for (int i = 0; i <= N; i++)
+            {
+                for (int j=0;j<listOfLists[i].Count;j++)
+                {
+                    if (listOfLists[i][j].Place==where)
+                    {
+                        return true;
+                    }
+                }
+            }
+                return false;
         }
 
         private void ButtonPlayer_Click(object sender, EventArgs e)

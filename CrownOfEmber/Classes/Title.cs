@@ -21,6 +21,7 @@ namespace CrownOfEmber.Classes
         */
         public Title(string Place)
         {
+            this.Place = Place;
             string strTitles = Properties.Resources.TextFileTitles;
             string[] strTitle = strTitles.Split(new char[] { '\n' });
             foreach (string curTitle in strTitle)
@@ -31,9 +32,9 @@ namespace CrownOfEmber.Classes
                     string[] fieldTitle = curTitle.Split(new char[] {';'});
                     Name = fieldTitle[1];
                     World = fieldTitle[2];
-                    if (fieldTitle[fieldTitle.Length - 1].Contains("\n"))
+                    if (fieldTitle[fieldTitle.Length - 1].Length>9)
                     {
-                        fieldTitle[fieldTitle.Length - 1].Remove(fieldTitle[fieldTitle.Length - 1].Length - 1, 1);
+                       fieldTitle[fieldTitle.Length - 1]=fieldTitle[fieldTitle.Length - 1].Substring(0, 9);
                     }
                     for (int i=3;i< fieldTitle.Length;i++)
                     {
