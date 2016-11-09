@@ -63,14 +63,14 @@ label0908;Заброшенное шоссе;Мир Ума;label0808;label1008;label0909
 label0909;Ростовщик;Мир Золота;label0908;label0809;label1009
 label1002;Степь;Мир Ума;label0902;label1102
 label1003;Заросли кактусов;Мир Силы;label0903;label1004
-label1004;Перевал;label1003;Мир Силы;label0904;label1005
-label1005;Крепость;label1003;Мир Силы;label1005
-label1006;Оружейная лавка;Мир Силы;label1004;label1006
-label1007;Конные варвары;Мир Силы;label1006;label0907
-label1008;Речка;label0908;Мир Ума;label1108
-label1009;Биржа;label0909;Мир Золота;label1109
+label1004;Перевал;Мир Силы;label1003;label0904;label1005
+label1005;Крепость;Мир Силы;label1003;label1006
+label1006;Оружейная лавка;Мир Силы;label1004;label1007
+label1007;Конные варвары;Мир Силы;label1006;label0908
+label1008;Речка;Мир Ума;label0908;label1108
+label1009;Биржа;Мир Золота;label0909;label1109
 label1101;Обменный пункт;Нейтральный;label1102
-label1102;Биржа;label1101;label1002;label1103
+label1102;Каньон;Мир Ума;label1101;label1002;label1103
 label1103;Провал мира ума;Нейтральный;label1102;label1104
 label1104;Пик "Олимп";Мир Ума;label1103;label1105
 label1105;Обсерватория;Мир Ума;label1104;label1106
@@ -78,7 +78,7 @@ label1106;Книжный магазин;Мир Ума;label1105;label1206;label1107
 label1107;Маковые заросли;Мир Ума;label1106;label1108
 label1108;Пещера мудреца;Мир Ума;label1008;label1107
 label1109;Игровые автоматы;Мир Золота;label1009;label1509
-label1206;Кабак;label1106;Мир Золота;label1207
+label1206;Кабак;Мир Золота;label1106;label1207
 label1207;Тараканьи бега;Мир Золота;label1206;label1208
 label1208;Картёжники;Мир Золота;label1207;label1209
 label1209;Пещера сокровищ;Мир Золота;label1208;label1109

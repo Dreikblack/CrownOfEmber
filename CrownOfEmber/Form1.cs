@@ -50,14 +50,14 @@ namespace CrownOfEmber
                     if (listPlaces[j].Name == listPlayers[i].Place)
                     {
                         listButtonPlayers.Add(new Button());
-                        listButtonPlayers[i].Location = new System.Drawing.Point(listPlaces[j].Location.X, listPlaces[j].Location.Y);
+                        listButtonPlayers[i].Location = new Point(listPlaces[j].Location.X, listPlaces[j].Location.Y);
                         listButtonPlayers[i].Name = "ButtonPlayer" + (i);
-                        listButtonPlayers[i].Size = new System.Drawing.Size(30, 30);
+                        listButtonPlayers[i].Size = new Size(30, 30);
                         listButtonPlayers[i].TabIndex = 0;
                         listButtonPlayers[i].Text = "" + (i + 1);
                      //   listButtonPlayers[i].Font = ;
                         listButtonPlayers[i].BackColor = Color.Orange; 
-                        listButtonPlayers[i].Click += new System.EventHandler(ButtonPlayer_Click); 
+                        listButtonPlayers[i].Click += new EventHandler(ButtonPlayer_Click); 
                         Controls.Add(listButtonPlayers[i]);
                         listButtonPlayers[i].Parent = picBoxField1;
                         listButtonPlayers[i].BringToFront();
@@ -70,22 +70,32 @@ namespace CrownOfEmber
 
         private void Label_Click(object sender, EventArgs e)
         {
-            Title oldTitile = new Title(((Label)sender).Name);
+            string newPlace = ((Label)sender).Name;
+            Title oldTitile = new Title(newPlace);
             //  MessageBox.Show("Name - " + oldTitile.Name+" World "+oldTitile.World + " First near - " + oldTitile.NearTitles[0]);
-        /*    for(int j=0;j< oldTitile.NearTitles.Count;j++)
-            { 
-            MessageBox.Show("Near: " + oldTitile.NearTitles[j]);
-        }*/
-              if (curRes>0 && MovePlayer(listPlayers[curPlayer].Place, ((Label)sender).Name, curRes))
-              {
-                  MessageBox.Show("Way has been found");
-              }
+            /*    for(int j=0;j< oldTitile.NearTitles.Count;j++)
+                { 
+                MessageBox.Show("Near: " + oldTitile.NearTitles[j]);
+            }*/
+            if (curRes > 0 && PathFinding(listPlayers[curPlayer].Place, newPlace, curRes))
+            {
+                listPlayers[curPlayer].Place = newPlace;
+                for (int j = 0; j < listPlaces.Count; j++)
+                {
+                    if (listPlaces[j].Name == newPlace)
+                    {
+                        listButtonPlayers[curPlayer].Location = new Point(listPlaces[j].Location.X, listPlaces[j].Location.Y);
+                    }
+                }
+                toolStripTextBoxRes.Text = "";
+                //MessageBox.Show("Way has been found");
+            }
               else
-                  MessageBox.Show("Path not found");
+                  MessageBox.Show("Невозможно туда переместиться");
 
         }
 
-        private bool MovePlayer(string from, string where, short N)
+        private bool PathFinding(string from, string where, short N)
         {
            // List<Title> listPlaces = new List<Title>();
             List<List<Title>> listOfLists = new List<List<Title>>();
@@ -101,15 +111,31 @@ namespace CrownOfEmber
             {
                 for(int j=0;j<listOfLists[i-1].Count;j++)
                 {
-                    //for(int k=0;k<listOfLists[i - 1][j].NearTitles.Count; k++)
-                    //{
                     foreach (string strNear in listOfLists[i - 1][j].NearTitles)
-                    {   // listOfLists[i].Add(new Title(listOfLists[i - 1][j].NearTitles[k]));
-                        listOfLists[i].Add(new Title(strNear));
-                        //  }
+                    {   
+                        if (i>1)
+                        {
+                            foreach (Title tempTitle in listOfLists[i - 2])
+                            {
+                                if (listOfLists[i].Count>0 && listOfLists[i][listOfLists[i].Count-1].Place != strNear && tempTitle.Place != strNear)
+                                {
+                                    listOfLists[i].Add(new Title(strNear));
+                                    break;
+                                }
+                            }
+                        }
+                        else listOfLists[i].Add(new Title(strNear));
                     }
                 }
             }
+            for (int j = 0; j < listOfLists[N].Count; j++)
+            {
+                if (listOfLists[N][j].Place == where)
+                {
+                    return true;
+                }
+            }
+            /*
             for (int i = 0; i <= N; i++)
             {
                 for (int j=0;j<listOfLists[i].Count;j++)
@@ -120,7 +146,8 @@ namespace CrownOfEmber
                     }
                 }
             }
-                return false;
+            */
+            return false;
         }
 
         private void ButtonPlayer_Click(object sender, EventArgs e)
