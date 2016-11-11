@@ -87,7 +87,8 @@ namespace CrownOfEmber
                         listButtonPlayers[curPlayer].Location = new Point(listPlaces[j].Location.X, listPlaces[j].Location.Y);
                     }
                 }
-                toolStripTextBoxRes.Text = "";
+                
+                curRes = 0;
                 //MessageBox.Show("Way has been found");
             }
               else
@@ -97,10 +98,7 @@ namespace CrownOfEmber
 
         private bool PathFinding(string from, string where, short N)
         {
-           // List<Title> listPlaces = new List<Title>();
             List<List<Title>> listOfLists = new List<List<Title>>();
-            
-            
             for (int i=0;i<=N;i++)
             {
                 listOfLists.Add(new List<Title>());
@@ -112,19 +110,15 @@ namespace CrownOfEmber
                 for(int j=0;j<listOfLists[i-1].Count;j++)
                 {
                     foreach (string strNear in listOfLists[i - 1][j].NearTitles)
-                    {   
-                        if (i>1)
+                    {
+                        if (i > 1 && !listOfLists[i - 2].Exists(x => x.Place == strNear)) 
                         {
-                            foreach (Title tempTitle in listOfLists[i - 2])
-                            {
-                                if (listOfLists[i].Count>0 && listOfLists[i][listOfLists[i].Count-1].Place != strNear && tempTitle.Place != strNear)
-                                {
-                                    listOfLists[i].Add(new Title(strNear));
-                                    break;
-                                }
-                            }
+                            listOfLists[i].Add(new Title(strNear));
                         }
-                        else listOfLists[i].Add(new Title(strNear));
+                        else if (i < 2)
+                        {
+                            listOfLists[i].Add(new Title(strNear));
+                        }
                     }
                 }
             }
@@ -135,18 +129,6 @@ namespace CrownOfEmber
                     return true;
                 }
             }
-            /*
-            for (int i = 0; i <= N; i++)
-            {
-                for (int j=0;j<listOfLists[i].Count;j++)
-                {
-                    if (listOfLists[i][j].Place==where)
-                    {
-                        return true;
-                    }
-                }
-            }
-            */
             return false;
         }
 
