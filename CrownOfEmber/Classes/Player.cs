@@ -302,7 +302,10 @@ namespace CrownOfEmber.Classes
                     Place = "label1105";
                     break;
             }
-
+            if (charName=="Амазонка")
+            {
+                listItems.Add("Horse");
+            }
         }
 
         int numberPl;
@@ -319,9 +322,9 @@ namespace CrownOfEmber.Classes
         private int pointsIntellect = 0;
         private int pointsHealth = 0;
         private int pointsExp = 0;
-
         private int talers = 0;
 
+        public List<string> listItems = new List<string>();
 
         public int Number
         {
@@ -475,5 +478,25 @@ namespace CrownOfEmber.Classes
             get { return place; }
             set { place = value; }
         }
+        public bool HasAHorse()
+        {
+            if (listItems.Exists(x => x == "Horse"))
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+        public int FreeSlot()
+        {
+            if (!HasAHorse())
+            {
+                return 10 - listItems.Count;
+            }
+            else
+            {
+                return 10 - listItems.Count;
+            }
+         }
     }
 }

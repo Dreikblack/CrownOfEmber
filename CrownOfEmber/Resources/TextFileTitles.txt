@@ -24,7 +24,7 @@ label0403;Прерия;Мир Силы;label0303;label0503
 label0404;Храм Бааля 3 и 4;Нейтральный;label0405
 label0405;Храм Бааля 5 и 6;Нейтральный;label0505
 label0407;Джунгли;Мир Силы;label0307;label0507
-label0408;Пустошь;Мир Магии;label0308;label0508
+label0408;Пустошь;Мир Магии;label0308;label0508;label0409
 label0409;Аэропорт;Мир Золота;label0408;label0509;label0309
 label0502;Скалы;Мир Магии;label0402;label0602
 label0503;Салун;Мир Силы;label0403;label0603

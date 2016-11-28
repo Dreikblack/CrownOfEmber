@@ -48,6 +48,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShop.Designer.cs">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormStart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShop.resx">
+      <DependentUpon>FormShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
@@ -141,6 +150,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TextFileTitles.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardJourney12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResTalers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemContraband1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemContraband2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemContraband3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemContraband4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemContraband5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusPoints.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointsExp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointsHealth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointsInt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointsMagic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointsStrength.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

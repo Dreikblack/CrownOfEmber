@@ -16,18 +16,43 @@ namespace CrownOfEmber
         List<Player> listPlayers = new List<Player>();
         List<Label> listPlaces = new List<Label>();
         List<Button> listButtonPlayers = new List<Button>();
+        List<int> listContrabands = new List<int>();
+        const int countJourneys = 6;
+        List<int> listJourneys = new List<int>();
+
         short curPlayer = 0;
         short curRound = 1;
         short curTurn = 1;
         short curRes = 0;
+        int bankMoney = 0;
         //public Player[] msPlayers = new Player[2];
+        public static FormField1 SelfRef
+        {
+            get;
+            set;
+        }
         public FormField1(List<string> ltPlayers)
         {
             InitializeComponent();
+            SelfRef = this;
             for (int i = 0; i < ltPlayers.Count; i++)
             {
                 listPlayers.Add(new Player(ltPlayers[i], i));
             }
+            Random rnd = new Random();
+            while(listJourneys.Count == countJourneys)
+            {
+               int t = rnd.Next(countJourneys-1) +1;
+                if (!listJourneys.Exists(x => x == t))
+                {
+                    listJourneys.Add(t);
+                }
+            }
+            for (int i=1;i<=5;i++)
+            {
+                listContrabands.Add(i);
+            }
+
         }
         
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -50,12 +75,11 @@ namespace CrownOfEmber
                     if (listPlaces[j].Name == listPlayers[i].Place)
                     {
                         listButtonPlayers.Add(new Button());
-                        listButtonPlayers[i].Location = new Point(listPlaces[j].Location.X, listPlaces[j].Location.Y);
+                        listButtonPlayers[i].Location = new Point(listPlaces[j].Location.X, listPlaces[j].Location.Y + listPlaces[j].Size.Height-15);
                         listButtonPlayers[i].Name = "ButtonPlayer" + (i);
                         listButtonPlayers[i].Size = new Size(30, 30);
                         listButtonPlayers[i].TabIndex = 0;
                         listButtonPlayers[i].Text = "" + (i + 1);
-                     //   listButtonPlayers[i].Font = ;
                         listButtonPlayers[i].BackColor = Color.Orange; 
                         listButtonPlayers[i].Click += new EventHandler(ButtonPlayer_Click); 
                         Controls.Add(listButtonPlayers[i]);
@@ -72,28 +96,79 @@ namespace CrownOfEmber
         {
             string newPlace = ((Label)sender).Name;
             Title oldTitile = new Title(newPlace);
-            //  MessageBox.Show("Name - " + oldTitile.Name+" World "+oldTitile.World + " First near - " + oldTitile.NearTitles[0]);
-            /*    for(int j=0;j< oldTitile.NearTitles.Count;j++)
-                { 
-                MessageBox.Show("Near: " + oldTitile.NearTitles[j]);
-            }*/
             if (curRes > 0 && PathFinding(listPlayers[curPlayer].Place, newPlace, curRes))
             {
-                listPlayers[curPlayer].Place = newPlace;
+                listPlayers[curPlayer].Place = newPlace;//Перемещение
                 for (int j = 0; j < listPlaces.Count; j++)
                 {
                     if (listPlaces[j].Name == newPlace)
                     {
-                        listButtonPlayers[curPlayer].Location = new Point(listPlaces[j].Location.X, listPlaces[j].Location.Y);
+                        listButtonPlayers[curPlayer].Location = new Point(listPlaces[j].Location.X, listPlaces[j].Location.Y+listPlaces[j].Size.Height - 15);
                     }
                 }
-                
                 curRes = 0;
-                //MessageBox.Show("Way has been found");
+                //Выполнение условий поля
+                ExecuteField(newPlace);
             }
               else
                   MessageBox.Show("Невозможно туда переместиться");
 
+        }
+
+        private void ExecuteField(string place)
+        {
+            DialogResult dialogResult = new DialogResult();
+            Random rnd = new Random();
+            switch(place)
+            {
+                case "label0106":
+                    dialogResult = MessageBox.Show("Стражники предлагают сыграть в кости. \nCтавятся 5 талеров и кидаются два кубика:\n9-12 ты выиграл 15 талеров.\nВы согласны сыграть?", "Застава", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        if (listPlayers[curPlayer].Talers>=5)
+                        {
+                            int t1 = rnd.Next(6) + 1;
+                            int t2 = rnd.Next(6) + 1;
+                            if ((t1 + t2) > 9)
+                            {
+                                MessageBox.Show("Вы выкинули " + t1 + " и " + t2 + ".\nВы выиграли 15 талеров");
+                                listPlayers[curPlayer].Talers += 15;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Вы выкинули " + t1 + " и " + t2 + ".\nВы проиграли 5 талеров (Они переходят в банк).");
+                                listPlayers[curPlayer].Talers -= 5;
+                                bankMoney += 5;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("У вас нет 5 талеров.");
+                        }
+                    }
+                    /*else if (dialogResult == DialogResult.No)
+                    {
+                    }*/
+                    break;
+                case "label0107":
+                    FormShop FrmS = new FormShop("Контрабанда", listContrabands, listPlayers[curPlayer].Experience, listPlayers[curPlayer].Talers);
+                    FrmS.Activate();
+                    FrmS.Owner = this;
+                    this.Hide();
+                    FrmS.Show();//Нужно передать параметры из этой формы в текущую про предметы string
+                    break;
+            }
+            SetStatus();
+        }
+
+        public void setNewVars(int playersTalers, List<string> listItems)
+        {
+            listPlayers[curPlayer].Talers = playersTalers;
+            foreach (string curItem in listItems)
+            {
+                listPlayers[curPlayer].listItems.Add(curItem);
+            }
+            SetStatus();
         }
 
         private bool PathFinding(string from, string where, short N)
@@ -167,12 +242,18 @@ namespace CrownOfEmber
         private void SetStatus()
         {
             toolStripTextBoxCurPlayer.Text = "Ход игрока №" + (curPlayer + 1);
-            toolStripTextBoxCharName.Text = "Персонаж:  " + listPlayers[curPlayer].Name() + "; ";
-            toolStripTextBoxKindness.Text = "Статус: " + listPlayers[curPlayer].Kindness + ";";
-            toolStripTextBoxHonor.Text = listPlayers[curPlayer].Honor + "; ";
+            toolStripTextBoxCharName.Text = listPlayers[curPlayer].Name();
+            toolStripTextBoxKindness.Text = listPlayers[curPlayer].Kindness;
+            toolStripTextBoxHonor.Text = listPlayers[curPlayer].Honor;
             toolStripTextBoxPatience.Text = listPlayers[curPlayer].Patience;
             toolStripTextBoxRound.Text = "Тур: " + curRound;
             toolStripTextBoxTurn.Text = "Ход: " + curTurn;
+            labeltTalers.Text = ""+listPlayers[curPlayer].Talers;
+            labelHealth.Text = "Пункты жизни: "+listPlayers[curPlayer].Health;
+            labelInt.Text = "Пункты ума: " + listPlayers[curPlayer].Intellect;
+            labelMagic.Text = "Пункты магии: " + listPlayers[curPlayer].Magic;
+            labelStrength.Text = "Пункты силы: " + listPlayers[curPlayer].Strength;
+            labelExp.Text = "Пункты\nопыта:\n   " + listPlayers[curPlayer].Experience;
         }
 
         private void FormField1_FormClosed(object sender, FormClosedEventArgs e)
@@ -356,7 +437,5 @@ namespace CrownOfEmber
             label1208.Parent = picBoxField1;
             label1209.Parent = picBoxField1;
         }
-
-
     }
 }

@@ -6,19 +6,6 @@ namespace CrownOfEmber.Classes
 {
     class Title
     {
-        /*
-        public struct dbTitle
-        {
-            public string Place;
-            public string Name;
-            public int locX;
-            public int locY;
-            public List<string> NearTitles;           
-        }
-
-        List<dbTitle> listTitles = new List<dbTitle>();
-        //dbTitle
-        */
         public Title(string Place)
         {
             this.Place = Place;
@@ -26,7 +13,6 @@ namespace CrownOfEmber.Classes
             string[] strTitle = strTitles.Split(new char[] { '\n' });
             foreach (string curTitle in strTitle)
             {
-                // if (curTitle.Contains(Place))
                 if (curTitle.Substring(0,9)==Place)
                 {
                     string[] fieldTitle = curTitle.Split(new char[] {';'});

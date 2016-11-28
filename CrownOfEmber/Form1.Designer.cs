@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormField1));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelField1 = new System.Windows.Forms.Panel();
             this.label1208 = new System.Windows.Forms.Label();
             this.label1108 = new System.Windows.Forms.Label();
             this.label1008 = new System.Windows.Forms.Label();
@@ -118,117 +118,132 @@
             this.menuStripFormField1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBoxCurPlayer = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBoxCharName = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBoxKindness = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBoxHonor = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBoxPatience = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxRound = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBoxTurn = new System.Windows.Forms.ToolStripTextBox();
             this.кинутьКубикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBoxRes = new System.Windows.Forms.ToolStripTextBox();
             this.закончитьХодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panelBottom = new System.Windows.Forms.Panel();
+            this.labelMagic = new System.Windows.Forms.Label();
+            this.labelInt = new System.Windows.Forms.Label();
+            this.labelStrength = new System.Windows.Forms.Label();
+            this.labelHealth = new System.Windows.Forms.Label();
+            this.pictureBoxPoints = new System.Windows.Forms.PictureBox();
+            this.panelStatus2 = new System.Windows.Forms.Panel();
+            this.toolStripTextBoxPatience = new System.Windows.Forms.Label();
+            this.toolStripTextBoxHonor = new System.Windows.Forms.Label();
+            this.panelStatus = new System.Windows.Forms.Panel();
+            this.toolStripTextBoxKindness = new System.Windows.Forms.Label();
+            this.toolStripTextBoxCharName = new System.Windows.Forms.Label();
+            this.labeltTalers = new System.Windows.Forms.Label();
+            this.pictureBoxTalers = new System.Windows.Forms.PictureBox();
+            this.labelExp = new System.Windows.Forms.Label();
+            this.panelField1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxField1)).BeginInit();
             this.menuStripFormField1.SuspendLayout();
+            this.panelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoints)).BeginInit();
+            this.panelStatus2.SuspendLayout();
+            this.panelStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTalers)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelField1
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.AutoSize = true;
-            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.label1208);
-            this.panel1.Controls.Add(this.label1108);
-            this.panel1.Controls.Add(this.label1008);
-            this.panel1.Controls.Add(this.label0908);
-            this.panel1.Controls.Add(this.label0808);
-            this.panel1.Controls.Add(this.label0708);
-            this.panel1.Controls.Add(this.label0608);
-            this.panel1.Controls.Add(this.label0508);
-            this.panel1.Controls.Add(this.label0408);
-            this.panel1.Controls.Add(this.label1207);
-            this.panel1.Controls.Add(this.label1107);
-            this.panel1.Controls.Add(this.label1007);
-            this.panel1.Controls.Add(this.label0907);
-            this.panel1.Controls.Add(this.label0807);
-            this.panel1.Controls.Add(this.label0607);
-            this.panel1.Controls.Add(this.label0507);
-            this.panel1.Controls.Add(this.label0407);
-            this.panel1.Controls.Add(this.label1206);
-            this.panel1.Controls.Add(this.label1106);
-            this.panel1.Controls.Add(this.label1006);
-            this.panel1.Controls.Add(this.label0706);
-            this.panel1.Controls.Add(this.label0606);
-            this.panel1.Controls.Add(this.label1105);
-            this.panel1.Controls.Add(this.label1005);
-            this.panel1.Controls.Add(this.label0905);
-            this.panel1.Controls.Add(this.label0805);
-            this.panel1.Controls.Add(this.label0705);
-            this.panel1.Controls.Add(this.label0605);
-            this.panel1.Controls.Add(this.label1104);
-            this.panel1.Controls.Add(this.label1004);
-            this.panel1.Controls.Add(this.label0904);
-            this.panel1.Controls.Add(this.label0804);
-            this.panel1.Controls.Add(this.label0704);
-            this.panel1.Controls.Add(this.label0604);
-            this.panel1.Controls.Add(this.label0505);
-            this.panel1.Controls.Add(this.label0504);
-            this.panel1.Controls.Add(this.label0405);
-            this.panel1.Controls.Add(this.label0404);
-            this.panel1.Controls.Add(this.label0308);
-            this.panel1.Controls.Add(this.label0307);
-            this.panel1.Controls.Add(this.label0306);
-            this.panel1.Controls.Add(this.label0305);
-            this.panel1.Controls.Add(this.label0304);
-            this.panel1.Controls.Add(this.label1103);
-            this.panel1.Controls.Add(this.label1003);
-            this.panel1.Controls.Add(this.label0903);
-            this.panel1.Controls.Add(this.label0803);
-            this.panel1.Controls.Add(this.label0603);
-            this.panel1.Controls.Add(this.label0503);
-            this.panel1.Controls.Add(this.label0403);
-            this.panel1.Controls.Add(this.label0303);
-            this.panel1.Controls.Add(this.label1101);
-            this.panel1.Controls.Add(this.label1102);
-            this.panel1.Controls.Add(this.label1002);
-            this.panel1.Controls.Add(this.label0902);
-            this.panel1.Controls.Add(this.label0802);
-            this.panel1.Controls.Add(this.label0702);
-            this.panel1.Controls.Add(this.label0602);
-            this.panel1.Controls.Add(this.label0502);
-            this.panel1.Controls.Add(this.label0402);
-            this.panel1.Controls.Add(this.label0302);
-            this.panel1.Controls.Add(this.label1209);
-            this.panel1.Controls.Add(this.label1109);
-            this.panel1.Controls.Add(this.label1009);
-            this.panel1.Controls.Add(this.label0909);
-            this.panel1.Controls.Add(this.label0809);
-            this.panel1.Controls.Add(this.label0709);
-            this.panel1.Controls.Add(this.label0609);
-            this.panel1.Controls.Add(this.label0509);
-            this.panel1.Controls.Add(this.label0409);
-            this.panel1.Controls.Add(this.label0309);
-            this.panel1.Controls.Add(this.label0209);
-            this.panel1.Controls.Add(this.label0109);
-            this.panel1.Controls.Add(this.label0208);
-            this.panel1.Controls.Add(this.label0207);
-            this.panel1.Controls.Add(this.label0108);
-            this.panel1.Controls.Add(this.label0107);
-            this.panel1.Controls.Add(this.label0106);
-            this.panel1.Controls.Add(this.label0206);
-            this.panel1.Controls.Add(this.label0205);
-            this.panel1.Controls.Add(this.label0204);
-            this.panel1.Controls.Add(this.label0203);
-            this.panel1.Controls.Add(this.label0202);
-            this.panel1.Controls.Add(this.label0201);
-            this.panel1.Controls.Add(this.picBoxField1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1203, 527);
-            this.panel1.TabIndex = 2;
+            this.panelField1.AutoScroll = true;
+            this.panelField1.AutoSize = true;
+            this.panelField1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelField1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panelField1.Controls.Add(this.label1208);
+            this.panelField1.Controls.Add(this.label1108);
+            this.panelField1.Controls.Add(this.label1008);
+            this.panelField1.Controls.Add(this.label0908);
+            this.panelField1.Controls.Add(this.label0808);
+            this.panelField1.Controls.Add(this.label0708);
+            this.panelField1.Controls.Add(this.label0608);
+            this.panelField1.Controls.Add(this.label0508);
+            this.panelField1.Controls.Add(this.label0408);
+            this.panelField1.Controls.Add(this.label1207);
+            this.panelField1.Controls.Add(this.label1107);
+            this.panelField1.Controls.Add(this.label1007);
+            this.panelField1.Controls.Add(this.label0907);
+            this.panelField1.Controls.Add(this.label0807);
+            this.panelField1.Controls.Add(this.label0607);
+            this.panelField1.Controls.Add(this.label0507);
+            this.panelField1.Controls.Add(this.label0407);
+            this.panelField1.Controls.Add(this.label1206);
+            this.panelField1.Controls.Add(this.label1106);
+            this.panelField1.Controls.Add(this.label1006);
+            this.panelField1.Controls.Add(this.label0706);
+            this.panelField1.Controls.Add(this.label0606);
+            this.panelField1.Controls.Add(this.label1105);
+            this.panelField1.Controls.Add(this.label1005);
+            this.panelField1.Controls.Add(this.label0905);
+            this.panelField1.Controls.Add(this.label0805);
+            this.panelField1.Controls.Add(this.label0705);
+            this.panelField1.Controls.Add(this.label0605);
+            this.panelField1.Controls.Add(this.label1104);
+            this.panelField1.Controls.Add(this.label1004);
+            this.panelField1.Controls.Add(this.label0904);
+            this.panelField1.Controls.Add(this.label0804);
+            this.panelField1.Controls.Add(this.label0704);
+            this.panelField1.Controls.Add(this.label0604);
+            this.panelField1.Controls.Add(this.label0505);
+            this.panelField1.Controls.Add(this.label0504);
+            this.panelField1.Controls.Add(this.label0405);
+            this.panelField1.Controls.Add(this.label0404);
+            this.panelField1.Controls.Add(this.label0308);
+            this.panelField1.Controls.Add(this.label0307);
+            this.panelField1.Controls.Add(this.label0306);
+            this.panelField1.Controls.Add(this.label0305);
+            this.panelField1.Controls.Add(this.label0304);
+            this.panelField1.Controls.Add(this.label1103);
+            this.panelField1.Controls.Add(this.label1003);
+            this.panelField1.Controls.Add(this.label0903);
+            this.panelField1.Controls.Add(this.label0803);
+            this.panelField1.Controls.Add(this.label0603);
+            this.panelField1.Controls.Add(this.label0503);
+            this.panelField1.Controls.Add(this.label0403);
+            this.panelField1.Controls.Add(this.label0303);
+            this.panelField1.Controls.Add(this.label1101);
+            this.panelField1.Controls.Add(this.label1102);
+            this.panelField1.Controls.Add(this.label1002);
+            this.panelField1.Controls.Add(this.label0902);
+            this.panelField1.Controls.Add(this.label0802);
+            this.panelField1.Controls.Add(this.label0702);
+            this.panelField1.Controls.Add(this.label0602);
+            this.panelField1.Controls.Add(this.label0502);
+            this.panelField1.Controls.Add(this.label0402);
+            this.panelField1.Controls.Add(this.label0302);
+            this.panelField1.Controls.Add(this.label1209);
+            this.panelField1.Controls.Add(this.label1109);
+            this.panelField1.Controls.Add(this.label1009);
+            this.panelField1.Controls.Add(this.label0909);
+            this.panelField1.Controls.Add(this.label0809);
+            this.panelField1.Controls.Add(this.label0709);
+            this.panelField1.Controls.Add(this.label0609);
+            this.panelField1.Controls.Add(this.label0509);
+            this.panelField1.Controls.Add(this.label0409);
+            this.panelField1.Controls.Add(this.label0309);
+            this.panelField1.Controls.Add(this.label0209);
+            this.panelField1.Controls.Add(this.label0109);
+            this.panelField1.Controls.Add(this.label0208);
+            this.panelField1.Controls.Add(this.label0207);
+            this.panelField1.Controls.Add(this.label0108);
+            this.panelField1.Controls.Add(this.label0107);
+            this.panelField1.Controls.Add(this.label0106);
+            this.panelField1.Controls.Add(this.label0206);
+            this.panelField1.Controls.Add(this.label0205);
+            this.panelField1.Controls.Add(this.label0204);
+            this.panelField1.Controls.Add(this.label0203);
+            this.panelField1.Controls.Add(this.label0202);
+            this.panelField1.Controls.Add(this.label0201);
+            this.panelField1.Controls.Add(this.picBoxField1);
+            this.panelField1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelField1.Location = new System.Drawing.Point(0, 0);
+            this.panelField1.Name = "panelField1";
+            this.panelField1.Size = new System.Drawing.Size(854, 310);
+            this.panelField1.TabIndex = 2;
             // 
             // label1208
             // 
@@ -1252,10 +1267,6 @@
             this.menuStripFormField1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
             this.toolStripTextBoxCurPlayer,
-            this.toolStripTextBoxCharName,
-            this.toolStripTextBoxKindness,
-            this.toolStripTextBoxHonor,
-            this.toolStripTextBoxPatience,
             this.toolStripTextBoxRound,
             this.toolStripTextBoxTurn,
             this.кинутьКубикToolStripMenuItem,
@@ -1263,7 +1274,7 @@
             this.закончитьХодToolStripMenuItem});
             this.menuStripFormField1.Location = new System.Drawing.Point(0, 0);
             this.menuStripFormField1.Name = "menuStripFormField1";
-            this.menuStripFormField1.Size = new System.Drawing.Size(1203, 27);
+            this.menuStripFormField1.Size = new System.Drawing.Size(854, 27);
             this.menuStripFormField1.TabIndex = 3;
             this.menuStripFormField1.Text = "menuStrip1";
             // 
@@ -1275,33 +1286,10 @@
             // 
             // toolStripTextBoxCurPlayer
             // 
+            this.toolStripTextBoxCurPlayer.Enabled = false;
             this.toolStripTextBoxCurPlayer.Name = "toolStripTextBoxCurPlayer";
             this.toolStripTextBoxCurPlayer.ReadOnly = true;
             this.toolStripTextBoxCurPlayer.Size = new System.Drawing.Size(100, 23);
-            // 
-            // toolStripTextBoxCharName
-            // 
-            this.toolStripTextBoxCharName.Name = "toolStripTextBoxCharName";
-            this.toolStripTextBoxCharName.ReadOnly = true;
-            this.toolStripTextBoxCharName.Size = new System.Drawing.Size(180, 23);
-            // 
-            // toolStripTextBoxKindness
-            // 
-            this.toolStripTextBoxKindness.Name = "toolStripTextBoxKindness";
-            this.toolStripTextBoxKindness.ReadOnly = true;
-            this.toolStripTextBoxKindness.Size = new System.Drawing.Size(130, 23);
-            // 
-            // toolStripTextBoxHonor
-            // 
-            this.toolStripTextBoxHonor.Name = "toolStripTextBoxHonor";
-            this.toolStripTextBoxHonor.ReadOnly = true;
-            this.toolStripTextBoxHonor.Size = new System.Drawing.Size(80, 23);
-            // 
-            // toolStripTextBoxPatience
-            // 
-            this.toolStripTextBoxPatience.Name = "toolStripTextBoxPatience";
-            this.toolStripTextBoxPatience.ReadOnly = true;
-            this.toolStripTextBoxPatience.Size = new System.Drawing.Size(90, 23);
             // 
             // toolStripTextBoxRound
             // 
@@ -1335,46 +1323,215 @@
             this.закончитьХодToolStripMenuItem.Text = "Закончить ход";
             this.закончитьХодToolStripMenuItem.Click += new System.EventHandler(this.закончитьХодToolStripMenuItem_Click);
             // 
-            // panel2
+            // panelBottom
             // 
-            this.panel2.BackColor = System.Drawing.Color.Peru;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 527);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1203, 51);
-            this.panel2.TabIndex = 4;
+            this.panelBottom.BackColor = System.Drawing.Color.Peru;
+            this.panelBottom.Controls.Add(this.labelExp);
+            this.panelBottom.Controls.Add(this.labelMagic);
+            this.panelBottom.Controls.Add(this.labelInt);
+            this.panelBottom.Controls.Add(this.labelStrength);
+            this.panelBottom.Controls.Add(this.labelHealth);
+            this.panelBottom.Controls.Add(this.pictureBoxPoints);
+            this.panelBottom.Controls.Add(this.panelStatus2);
+            this.panelBottom.Controls.Add(this.panelStatus);
+            this.panelBottom.Controls.Add(this.labeltTalers);
+            this.panelBottom.Controls.Add(this.pictureBoxTalers);
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(0, 310);
+            this.panelBottom.Margin = new System.Windows.Forms.Padding(0);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(854, 51);
+            this.panelBottom.TabIndex = 4;
+            // 
+            // labelMagic
+            // 
+            this.labelMagic.AutoSize = true;
+            this.labelMagic.BackColor = System.Drawing.Color.Transparent;
+            this.labelMagic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMagic.Image = global::CrownOfEmber.Properties.Resources.PointsMagic;
+            this.labelMagic.Location = new System.Drawing.Point(499, 28);
+            this.labelMagic.Name = "labelMagic";
+            this.labelMagic.Size = new System.Drawing.Size(46, 15);
+            this.labelMagic.TabIndex = 7;
+            this.labelMagic.Text = "Magic";
+            // 
+            // labelInt
+            // 
+            this.labelInt.AutoSize = true;
+            this.labelInt.BackColor = System.Drawing.Color.Transparent;
+            this.labelInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInt.Image = global::CrownOfEmber.Properties.Resources.PointsInt;
+            this.labelInt.Location = new System.Drawing.Point(500, 2);
+            this.labelInt.Name = "labelInt";
+            this.labelInt.Size = new System.Drawing.Size(23, 15);
+            this.labelInt.TabIndex = 6;
+            this.labelInt.Text = "Int";
+            // 
+            // labelStrength
+            // 
+            this.labelStrength.AutoSize = true;
+            this.labelStrength.BackColor = System.Drawing.Color.Transparent;
+            this.labelStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelStrength.Image = global::CrownOfEmber.Properties.Resources.PointsStrength;
+            this.labelStrength.Location = new System.Drawing.Point(378, 28);
+            this.labelStrength.Name = "labelStrength";
+            this.labelStrength.Size = new System.Drawing.Size(61, 15);
+            this.labelStrength.TabIndex = 5;
+            this.labelStrength.Text = "Strength";
+            // 
+            // labelHealth
+            // 
+            this.labelHealth.AutoSize = true;
+            this.labelHealth.BackColor = System.Drawing.Color.Transparent;
+            this.labelHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHealth.Image = global::CrownOfEmber.Properties.Resources.PointsHealth;
+            this.labelHealth.Location = new System.Drawing.Point(377, 4);
+            this.labelHealth.Name = "labelHealth";
+            this.labelHealth.Size = new System.Drawing.Size(49, 15);
+            this.labelHealth.TabIndex = 4;
+            this.labelHealth.Text = "Health";
+            // 
+            // pictureBoxPoints
+            // 
+            this.pictureBoxPoints.Image = global::CrownOfEmber.Properties.Resources.StatusPoints;
+            this.pictureBoxPoints.Location = new System.Drawing.Point(377, 0);
+            this.pictureBoxPoints.Name = "pictureBoxPoints";
+            this.pictureBoxPoints.Size = new System.Drawing.Size(300, 50);
+            this.pictureBoxPoints.TabIndex = 4;
+            this.pictureBoxPoints.TabStop = false;
+            // 
+            // panelStatus2
+            // 
+            this.panelStatus2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelStatus2.Controls.Add(this.toolStripTextBoxPatience);
+            this.panelStatus2.Controls.Add(this.toolStripTextBoxHonor);
+            this.panelStatus2.Location = new System.Drawing.Point(142, 3);
+            this.panelStatus2.Name = "panelStatus2";
+            this.panelStatus2.Size = new System.Drawing.Size(123, 45);
+            this.panelStatus2.TabIndex = 3;
+            // 
+            // toolStripTextBoxPatience
+            // 
+            this.toolStripTextBoxPatience.AutoSize = true;
+            this.toolStripTextBoxPatience.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripTextBoxPatience.Location = new System.Drawing.Point(3, 25);
+            this.toolStripTextBoxPatience.Name = "toolStripTextBoxPatience";
+            this.toolStripTextBoxPatience.Size = new System.Drawing.Size(63, 15);
+            this.toolStripTextBoxPatience.TabIndex = 3;
+            this.toolStripTextBoxPatience.Text = "Patience";
+            // 
+            // toolStripTextBoxHonor
+            // 
+            this.toolStripTextBoxHonor.AutoSize = true;
+            this.toolStripTextBoxHonor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripTextBoxHonor.Location = new System.Drawing.Point(3, 4);
+            this.toolStripTextBoxHonor.Name = "toolStripTextBoxHonor";
+            this.toolStripTextBoxHonor.Size = new System.Drawing.Size(54, 15);
+            this.toolStripTextBoxHonor.TabIndex = 2;
+            this.toolStripTextBoxHonor.Text = "Honour";
+            // 
+            // panelStatus
+            // 
+            this.panelStatus.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelStatus.Controls.Add(this.toolStripTextBoxKindness);
+            this.panelStatus.Controls.Add(this.toolStripTextBoxCharName);
+            this.panelStatus.Location = new System.Drawing.Point(7, 3);
+            this.panelStatus.Name = "panelStatus";
+            this.panelStatus.Size = new System.Drawing.Size(127, 45);
+            this.panelStatus.TabIndex = 2;
+            // 
+            // toolStripTextBoxKindness
+            // 
+            this.toolStripTextBoxKindness.AutoSize = true;
+            this.toolStripTextBoxKindness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripTextBoxKindness.Location = new System.Drawing.Point(3, 24);
+            this.toolStripTextBoxKindness.Name = "toolStripTextBoxKindness";
+            this.toolStripTextBoxKindness.Size = new System.Drawing.Size(66, 15);
+            this.toolStripTextBoxKindness.TabIndex = 1;
+            this.toolStripTextBoxKindness.Text = "Kindness";
+            // 
+            // toolStripTextBoxCharName
+            // 
+            this.toolStripTextBoxCharName.AutoSize = true;
+            this.toolStripTextBoxCharName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripTextBoxCharName.Location = new System.Drawing.Point(4, 4);
+            this.toolStripTextBoxCharName.Name = "toolStripTextBoxCharName";
+            this.toolStripTextBoxCharName.Size = new System.Drawing.Size(45, 15);
+            this.toolStripTextBoxCharName.TabIndex = 0;
+            this.toolStripTextBoxCharName.Text = "Name";
+            // 
+            // labeltTalers
+            // 
+            this.labeltTalers.AutoSize = true;
+            this.labeltTalers.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labeltTalers.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labeltTalers.Location = new System.Drawing.Point(352, 3);
+            this.labeltTalers.Margin = new System.Windows.Forms.Padding(0);
+            this.labeltTalers.Name = "labeltTalers";
+            this.labeltTalers.Size = new System.Drawing.Size(19, 15);
+            this.labeltTalers.TabIndex = 1;
+            this.labeltTalers.Text = "00";
+            // 
+            // pictureBoxTalers
+            // 
+            this.pictureBoxTalers.Image = global::CrownOfEmber.Properties.Resources.ResTalers;
+            this.pictureBoxTalers.Location = new System.Drawing.Point(271, 2);
+            this.pictureBoxTalers.Name = "pictureBoxTalers";
+            this.pictureBoxTalers.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxTalers.TabIndex = 0;
+            this.pictureBoxTalers.TabStop = false;
+            // 
+            // labelExp
+            // 
+            this.labelExp.AutoSize = true;
+            this.labelExp.BackColor = System.Drawing.Color.Transparent;
+            this.labelExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelExp.Image = global::CrownOfEmber.Properties.Resources.PointsExp;
+            this.labelExp.Location = new System.Drawing.Point(622, 5);
+            this.labelExp.Name = "labelExp";
+            this.labelExp.Size = new System.Drawing.Size(31, 15);
+            this.labelExp.TabIndex = 8;
+            this.labelExp.Text = "Exp";
             // 
             // FormField1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(1203, 578);
+            this.ClientSize = new System.Drawing.Size(854, 361);
             this.Controls.Add(this.menuStripFormField1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelField1);
+            this.Controls.Add(this.panelBottom);
             this.MainMenuStrip = this.menuStripFormField1;
             this.Name = "FormField1";
             this.Text = "Корона Эмбера";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormField1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelField1.ResumeLayout(false);
+            this.panelField1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxField1)).EndInit();
             this.menuStripFormField1.ResumeLayout(false);
             this.menuStripFormField1.PerformLayout();
+            this.panelBottom.ResumeLayout(false);
+            this.panelBottom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoints)).EndInit();
+            this.panelStatus2.ResumeLayout(false);
+            this.panelStatus2.PerformLayout();
+            this.panelStatus.ResumeLayout(false);
+            this.panelStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTalers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelField1;
         private System.Windows.Forms.PictureBox picBoxField1;
         private System.Windows.Forms.MenuStrip menuStripFormField1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelBottom;
         private System.Windows.Forms.Label label0201;
         private System.Windows.Forms.Label label0202;
         private System.Windows.Forms.Label label1102;
@@ -1459,16 +1616,26 @@
         private System.Windows.Forms.Label label0708;
         private System.Windows.Forms.Label label0608;
         private System.Windows.Forms.Label label0508;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxCharName;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxKindness;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxHonor;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxPatience;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBoxRound;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBoxTurn;
         private System.Windows.Forms.ToolStripMenuItem кинутьКубикToolStripMenuItem;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBoxRes;
         private System.Windows.Forms.ToolStripMenuItem закончитьХодToolStripMenuItem;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBoxCurPlayer;
+        private System.Windows.Forms.PictureBox pictureBoxTalers;
+        private System.Windows.Forms.Label labeltTalers;
+        private System.Windows.Forms.Panel panelStatus;
+        private System.Windows.Forms.Label toolStripTextBoxHonor;
+        private System.Windows.Forms.Label toolStripTextBoxKindness;
+        private System.Windows.Forms.Label toolStripTextBoxCharName;
+        private System.Windows.Forms.Panel panelStatus2;
+        private System.Windows.Forms.Label toolStripTextBoxPatience;
+        private System.Windows.Forms.PictureBox pictureBoxPoints;
+        private System.Windows.Forms.Label labelInt;
+        private System.Windows.Forms.Label labelStrength;
+        private System.Windows.Forms.Label labelHealth;
+        private System.Windows.Forms.Label labelMagic;
+        private System.Windows.Forms.Label labelExp;
     }
 }
 

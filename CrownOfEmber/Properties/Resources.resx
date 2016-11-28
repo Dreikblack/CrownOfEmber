@@ -148,6 +148,42 @@
   <data name="CardHussar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardHussar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CardJourney1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney10.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney11.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney12.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney5.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney6.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney7.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney8.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardJourney9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardJourney9.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CardMercenary" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardMercenary.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +210,42 @@
   </data>
   <data name="Field1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Field1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemContraband1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemContraband1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemContraband2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemContraband2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemContraband3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemContraband3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemContraband4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemContraband4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemContraband5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemContraband5.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PointsExp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PointsExp.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PointsHealth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PointsHealth.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PointsInt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PointsInt.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PointsMagic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PointsMagic.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PointsStrength" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PointsStrength.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResTalers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResTalers.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StatusPoints" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StatusPoints.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TextFileTitles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextFileTitles.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>

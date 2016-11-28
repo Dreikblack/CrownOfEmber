@@ -89,7 +89,7 @@ namespace CrownOfEmber
                 SelectChar();
             }
             FormField1 FrmF1 = new FormField1(listPlayers);
-            //FrmF1.Activate();
+            FrmF1.Activate();
             FrmF1.Owner = this;
             FrmF1.Show();
             this.Hide();
