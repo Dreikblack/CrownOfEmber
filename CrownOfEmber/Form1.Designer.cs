@@ -124,6 +124,7 @@
             this.toolStripTextBoxRes = new System.Windows.Forms.ToolStripTextBox();
             this.закончитьХодToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelBottom = new System.Windows.Forms.Panel();
+            this.labelExp = new System.Windows.Forms.Label();
             this.labelMagic = new System.Windows.Forms.Label();
             this.labelInt = new System.Windows.Forms.Label();
             this.labelStrength = new System.Windows.Forms.Label();
@@ -137,7 +138,7 @@
             this.toolStripTextBoxCharName = new System.Windows.Forms.Label();
             this.labeltTalers = new System.Windows.Forms.Label();
             this.pictureBoxTalers = new System.Windows.Forms.PictureBox();
-            this.labelExp = new System.Windows.Forms.Label();
+            this.ToolStripMenuItems = new System.Windows.Forms.ToolStripMenuItem();
             this.panelField1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxField1)).BeginInit();
             this.menuStripFormField1.SuspendLayout();
@@ -1267,6 +1268,7 @@
             this.menuStripFormField1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
             this.toolStripTextBoxCurPlayer,
+            this.ToolStripMenuItems,
             this.toolStripTextBoxRound,
             this.toolStripTextBoxTurn,
             this.кинутьКубикToolStripMenuItem,
@@ -1342,6 +1344,18 @@
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(854, 51);
             this.panelBottom.TabIndex = 4;
+            // 
+            // labelExp
+            // 
+            this.labelExp.AutoSize = true;
+            this.labelExp.BackColor = System.Drawing.Color.Transparent;
+            this.labelExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelExp.Image = global::CrownOfEmber.Properties.Resources.PointsExp;
+            this.labelExp.Location = new System.Drawing.Point(622, 5);
+            this.labelExp.Name = "labelExp";
+            this.labelExp.Size = new System.Drawing.Size(31, 15);
+            this.labelExp.TabIndex = 8;
+            this.labelExp.Text = "Exp";
             // 
             // labelMagic
             // 
@@ -1481,17 +1495,12 @@
             this.pictureBoxTalers.TabIndex = 0;
             this.pictureBoxTalers.TabStop = false;
             // 
-            // labelExp
+            // ToolStripMenuItems
             // 
-            this.labelExp.AutoSize = true;
-            this.labelExp.BackColor = System.Drawing.Color.Transparent;
-            this.labelExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelExp.Image = global::CrownOfEmber.Properties.Resources.PointsExp;
-            this.labelExp.Location = new System.Drawing.Point(622, 5);
-            this.labelExp.Name = "labelExp";
-            this.labelExp.Size = new System.Drawing.Size(31, 15);
-            this.labelExp.TabIndex = 8;
-            this.labelExp.Text = "Exp";
+            this.ToolStripMenuItems.Name = "ToolStripMenuItems";
+            this.ToolStripMenuItems.Size = new System.Drawing.Size(76, 23);
+            this.ToolStripMenuItems.Text = "Предметы";
+            this.ToolStripMenuItems.Click += new System.EventHandler(this.ToolStripMenuItems_Click);
             // 
             // FormField1
             // 
@@ -1636,6 +1645,7 @@
         private System.Windows.Forms.Label labelHealth;
         private System.Windows.Forms.Label labelMagic;
         private System.Windows.Forms.Label labelExp;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItems;
     }
 }
 

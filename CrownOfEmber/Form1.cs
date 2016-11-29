@@ -155,7 +155,7 @@ namespace CrownOfEmber
                     FrmS.Activate();
                     FrmS.Owner = this;
                     this.Hide();
-                    FrmS.Show();//Нужно передать параметры из этой формы в текущую про предметы string
+                    FrmS.Show();
                     break;
             }
             SetStatus();
@@ -221,6 +221,14 @@ namespace CrownOfEmber
                 toolStripTextBoxRes.Text = "На кубике " + res;
             }
         }
+
+        private void ToolStripMenuItems_Click(object sender, EventArgs e)
+        {
+            FormInventory FrmInv = new FormInventory(curPlayer, curTurn, listPlayers[curPlayer].listItems);
+            FrmInv.Activate();
+            FrmInv.Show();
+        }
+
 
         private void закончитьХодToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -437,5 +445,7 @@ namespace CrownOfEmber
             label1208.Parent = picBoxField1;
             label1209.Parent = picBoxField1;
         }
+
+
     }
 }
