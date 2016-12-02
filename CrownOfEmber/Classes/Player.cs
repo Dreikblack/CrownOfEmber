@@ -323,8 +323,15 @@ namespace CrownOfEmber.Classes
         private int pointsHealth = 0;
         private int pointsExp = 0;
         private int talers = 0;
+        private int turnsToEndSkipping = 0;
 
         public List<string> listItems = new List<string>();
+        public List<string> listAtStartTurn = new List<string>();
+        public int leftTurns
+        {
+            get { return turnsToEndSkipping; }
+            set { turnsToEndSkipping = value; }
+        }
 
         public int Number
         {

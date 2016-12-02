@@ -19,7 +19,7 @@ namespace CrownOfEmber
         List<int> listContrabands = new List<int>();
         const int countJourneys = 6;
         List<int> listJourneys = new List<int>();
-
+        
         short curPlayer = 0;
         short curRound = 1;
         short curTurn = 1;
@@ -157,6 +157,18 @@ namespace CrownOfEmber
                     this.Hide();
                     FrmS.Show();
                     break;
+				case "label0108":
+                    List<string> listSelects = new List<string>();
+                    listSelects.Add("1 тур - 5 талеров");
+                    listSelects.Add("2 тура - 10 талеров");
+                    listSelects.Add("3 тура - 15 талеров");
+                    listSelects.Add("Отказаться);
+				FormShop FrmSelection = new FormSelection("Вы можете завербоваться и остаться на поле Иностранный лиегион. \nВыберите срок и оплату. \nПо окончании срока службы бросится кубик:\n1-4 поулчаетете деньги\n5-6Вас объявили дезертиром (теряете 1 ПЖ и половину выслуженный денег)", listSelects);
+                    FrmSelection.Activate();
+                    FrmSelection.Owner = this;
+                    this.Hide();
+                    FrmSelection.Show();
+				break;
             }
             SetStatus();
         }
@@ -169,6 +181,12 @@ namespace CrownOfEmber
                 listPlayers[curPlayer].listItems.Add(curItem);
             }
             SetStatus();
+        }
+
+        public void addedNewAtStart(string item, int leftTours)
+        {
+            listPlayers[curPlayer].leftTurns = leftTours;
+            listPlayers[curPlayer].listAtStartTurn.Add(item);
         }
 
         private bool PathFinding(string from, string where, short N)
@@ -232,6 +250,7 @@ namespace CrownOfEmber
 
         private void закончитьХодToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            beginEndTurn:
             if (curPlayer < (listPlayers.Count - 1))
             {
                 curPlayer++;
@@ -245,6 +264,61 @@ namespace CrownOfEmber
             SetStatus();
             curRes = 0;
             toolStripTextBoxRes.Text = "";
+            if (listPlayers[curPlayer].leftTurns>0)
+            {
+                MessageBox.Show("Игроку №"+(curPlayer+1)+" осталось "+listPlayers[curPlayer].leftTurns+" туров (включая текущий) до своего хода");
+                listPlayers[curPlayer].leftTurns--;
+                goto beginEndTurn;
+            }
+            Random rnd = new Random();
+            int t = 0;
+            foreach (string curAtStart in listPlayers[curPlayer].listAtStartTurn)
+            {
+                
+                switch (curAtStart)
+                {
+                    case "1 тур - 5 талеров":
+                        t = rnd.Next(6)+1; 
+                        if (t<5)
+                        {
+                            listPlayers[curPlayer].Talers+=5;
+                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и получил 5 талеров");
+                        }
+                        else
+                        {
+                            listPlayers[curPlayer].Talers+=3;
+                            listPlayers[curPlayer].Health--;
+                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и был объявлен дезертиром. Получено 3 талеров и потерян один ПЖ");
+                        }
+                        break;
+                    case "2 тура - 5 талеров":
+                        if (t<5)
+                        {
+                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и получил 10 талеров");
+                            listPlayers[curPlayer].Talers+=10;
+                        }
+                        else
+                        {
+                            listPlayers[curPlayer].Talers+=5;
+                            listPlayers[curPlayer].Health--;
+                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и был объявлен дезертиром. Получено 5 талеров и потерян один ПЖ");
+                        }
+                        break;
+                    case "3 тура - 15 талеров":
+                        if (t<5)
+                        {
+                            listPlayers[curPlayer].Talers+=15;
+                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и получил 15 талеров");
+                        }
+                        else
+                        {
+                            listPlayers[curPlayer].Talers+=8;
+                            listPlayers[curPlayer].Health--;
+                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и был объявлен дезертиром. Получено 8 талеров и потерян один ПЖ");
+                        }
+                        break;
+                }
+            }
         }
 
         private void SetStatus()
