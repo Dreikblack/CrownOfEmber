@@ -79,7 +79,7 @@ namespace CrownOfEmber
                         freeSlots--;
                         listBoughtItems.Add(listBoxShopItems.GetItemText(listBoxShopItems.SelectedItem));
                         listBoxShopItems.Items.Remove(listBoxShopItems.SelectedItem);
-                        FormField1.SelfRef.setNewVars(playerTalers, listBoughtItems);
+                        FormField1.SelfRef.SetNewVars(playerTalers, listBoughtItems);
                         this.Owner.Show();
                         this.Close();
                     }
@@ -119,7 +119,7 @@ namespace CrownOfEmber
 
         private void buttonShopExit_Click(object sender, EventArgs e)
         {     
-            FormField1.SelfRef.setNewVars(playerTalers, listBoughtItems);
+            FormField1.SelfRef.SetNewVars(playerTalers, listBoughtItems);
             this.Owner.Show();
             this.Close();
  
@@ -127,7 +127,7 @@ namespace CrownOfEmber
 
         private void FormShop_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FormField1.SelfRef.setNewVars(playerTalers, listBoughtItems);
+            FormField1.SelfRef.SetNewVars(playerTalers, listBoughtItems);
             this.Owner.Show();
         }
     }

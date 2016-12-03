@@ -31,13 +31,13 @@ namespace CrownOfEmber
                 switch (listBoxSelection.GetItemText(listBoxSelection.SelectedItem))
                         {
                             case "1 тур - 5 талеров":
-                                 FormField1.SelfRef.addedNewAtStart(listBoxSelection.GetItemText(listBoxSelection.SelectedItem), 1);
+                                 FormField1.SelfRef.AddedNewAtStart(listBoxSelection.GetItemText(listBoxSelection.SelectedItem), 1);
                                 break;
                             case "2 тура - 5 талеров":
-                                FormField1.SelfRef.addedNewAtStart(listBoxSelection.GetItemText(listBoxSelection.SelectedItem), 2);
+                                FormField1.SelfRef.AddedNewAtStart(listBoxSelection.GetItemText(listBoxSelection.SelectedItem), 2);
                                 break;
                             case "3 тура - 5 талеров":
-                                FormField1.SelfRef.addedNewAtStart(listBoxSelection.GetItemText(listBoxSelection.SelectedItem), 3);
+                                FormField1.SelfRef.AddedNewAtStart(listBoxSelection.GetItemText(listBoxSelection.SelectedItem), 3);
                                 break;
                         }
                         this.Owner.Show();

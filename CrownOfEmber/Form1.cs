@@ -11,8 +11,6 @@ namespace CrownOfEmber
 {
     public partial class FormField1 : Form
     {
-        // public int widthForm1 = 0;
-        //   public int heightForm1 = 0;
         List<Player> listPlayers = new List<Player>();
         List<Label> listPlaces = new List<Label>();
         List<Button> listButtonPlayers = new List<Button>();
@@ -25,7 +23,6 @@ namespace CrownOfEmber
         short curTurn = 1;
         short curRes = 0;
         int bankMoney = 0;
-        //public Player[] msPlayers = new Player[2];
         public static FormField1 SelfRef
         {
             get;
@@ -162,8 +159,8 @@ namespace CrownOfEmber
                     listSelects.Add("1 тур - 5 талеров");
                     listSelects.Add("2 тура - 10 талеров");
                     listSelects.Add("3 тура - 15 талеров");
-                    listSelects.Add("Отказаться);
-				FormShop FrmSelection = new FormSelection("Вы можете завербоваться и остаться на поле Иностранный лиегион. \nВыберите срок и оплату. \nПо окончании срока службы бросится кубик:\n1-4 поулчаетете деньги\n5-6Вас объявили дезертиром (теряете 1 ПЖ и половину выслуженный денег)", listSelects);
+                    listSelects.Add("Отказаться");
+                    FormSelection FrmSelection = new FormSelection("Вы можете завербоваться и остаться на поле Иностранный лиегион. \nВыберите срок и оплату. \nПо окончании срока службы бросится кубик:\n1-4 поулчаетете деньги\n5-6Вас объявили дезертиром (теряете 1 ПЖ и половину выслуженный денег)", listSelects);
                     FrmSelection.Activate();
                     FrmSelection.Owner = this;
                     this.Hide();
@@ -173,7 +170,7 @@ namespace CrownOfEmber
             SetStatus();
         }
 
-        public void setNewVars(int playersTalers, List<string> listItems)
+        public void SetNewVars(int playersTalers, List<string> listItems)
         {
             listPlayers[curPlayer].Talers = playersTalers;
             foreach (string curItem in listItems)
@@ -183,7 +180,7 @@ namespace CrownOfEmber
             SetStatus();
         }
 
-        public void addedNewAtStart(string item, int leftTours)
+        public void AddedNewAtStart(string item, int leftTours)
         {
             listPlayers[curPlayer].leftTurns = leftTours;
             listPlayers[curPlayer].listAtStartTurn.Add(item);
@@ -273,8 +270,7 @@ namespace CrownOfEmber
             Random rnd = new Random();
             int t = 0;
             foreach (string curAtStart in listPlayers[curPlayer].listAtStartTurn)
-            {
-                
+            {               
                 switch (curAtStart)
                 {
                     case "1 тур - 5 талеров":
@@ -282,7 +278,7 @@ namespace CrownOfEmber
                         if (t<5)
                         {
                             listPlayers[curPlayer].Talers+=5;
-                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и получил 5 талеров");
+                            MessageBox.Show("Игрок №"+(curPlayer+1)+" отслужил в Иностранном легионе и получил 5 талеров");  
                         }
                         else
                         {
@@ -318,6 +314,7 @@ namespace CrownOfEmber
                         }
                         break;
                 }
+                listPlayers[curPlayer].listAtStartTurn.Remove(curAtStart);
             }
         }
 
